@@ -24,9 +24,11 @@ Microduck is a 25 cm, ~800 g walking duck with 15 motors, a camera, an 8×8 ToF 
 
 The robot is pre-hardware: pre-orders are open, shipping is targeted for December 2026, and almost nobody outside Pollen has a physical unit yet. That shapes what is real today:
 
-- **Simulation tools work now.** The official browser sandbox, `microduck_rl`, and everything built on the published ONNX policies can be run and verified without a robot.
-- **Hardware-facing tools are pre-validation.** MCP servers, gateways and CLIs that target the real `robotd` API are written against the published design docs and mock transports; none listed here has been exercised on a shipped unit.
-- **Policy distribution is not yet upstream.** Pollen's roadmap milestone M8 (“Model channel”) will let policies be published to the Hugging Face Hub and installed with `robotctl update apply`; until it ships, policies live inside the daemon build, and community policy catalogs are browse-only.
+**Simulation tools work now.** The official browser sandbox, `microduck_rl`, and everything built on the published ONNX policies can be run and verified without a robot.
+
+**Hardware-facing tools are pre-validation.** MCP servers, gateways and CLIs that target the real `robotd` API are written against the published design docs and mock transports; none listed here has been exercised on a shipped unit.
+
+**Policy distribution is not yet upstream.** Pollen's roadmap milestone M8 (“Model channel”) will let policies be published to the Hugging Face Hub and installed with `robotctl update apply`; until it ships, policies live inside the daemon build, and community policy catalogs are browse-only.
 
 Entries marked *sim-only* have not been validated on hardware.
 
@@ -35,7 +37,7 @@ Entries marked *sim-only* have not been validated on hardware.
 - [pollen-robotics/microduck](https://github.com/pollen-robotics/microduck) - The robot's software: `robotd` 50 Hz control loop, `mediad` camera/WebRTC, `padd` gamepad, updater, and the nine shipped ONNX policies.
 - [pollen-robotics/microduck_rl](https://github.com/pollen-robotics/microduck_rl) - RL training environments on mjlab (MuJoCo Warp) with PPO, BAM actuator models, backlash simulation and domain randomization. Needs a CUDA GPU.
 - [pollen-robotics/microduck-gst-plugins](https://github.com/pollen-robotics/microduck-gst-plugins) - Prebuilt aarch64 GStreamer plugins (Rockchip MPP encoders, gst-plugins-rs WebRTC) used by the on-robot media daemon.
-- [Microduck Sandbox](https://huggingface.co/spaces/pollen-robotics/microduck-simulator) - Official in-browser simulator: MuJoCo WASM plus onnxruntime-web running the real policies at 50 Hz, with gamepad support and the roller-skate variant.
+- [Microduck Sandbox](https://huggingface.co/spaces/pollen-robotics/microduck-simulator) - Official in-browser simulator: MuJoCo compiled to WebAssembly plus onnxruntime-web running the real policies at 50 Hz, with gamepad support and the roller-skate variant.
 - [Product page](https://pollen-robotics.com/microduck) - Specs, colorways and the launch story.
 - [Store](https://store.pollen-robotics.com/products/microduck) - Pre-orders at $399.
 - [Press kit](https://pollen-robotics.com/microduck/press-kit/) - Facts, full spec sheet, photos and downloads.
