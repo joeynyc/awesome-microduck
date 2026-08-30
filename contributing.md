@@ -30,3 +30,9 @@ Anything not yet validated on a physical robot should be labeled *sim-only* in i
 - If you are removing or moving an entry, say why.
 
 Maintainers may edit descriptions for consistency. If you disagree with a decision, open an issue; the list follows the [awesome manifesto](https://github.com/sindresorhus/awesome/blob/main/awesome.md).
+
+## Assets and trademarks
+
+This list links to projects; it does not host their code, images or branding. Do not add Pollen Robotics or Hugging Face logos, product photography or press-kit renders to this repository — the press kit grants those for press coverage, not for decorating a third-party project, and using them here would imply an endorsement that does not exist. Any illustration in this repository must be original work we can license ourselves.
+
+When you submit a project, make sure its own readme is honest about the same thing: community work should not present itself as official.
