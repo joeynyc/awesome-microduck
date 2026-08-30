@@ -2,7 +2,9 @@
 
 > Software, simulators, policies, agent tools and coverage for Microduck, the $399 open-source biped robot from Pollen Robotics and Hugging Face.
 
-<img src="media/logo.svg" alt="Three stylised biped duck robots" width="600">
+<p align="center">
+  <img src="media/logo.svg" alt="Three stylised biped duck robots" width="640">
+</p>
 
 Microduck is a 25 cm, ~800 g walking duck with 15 motors, a camera, an 8×8 ToF depth sensor, two IMUs and a grasping beak. Every behavior it ships with (walking, sit/stand, kicking, ground pick, roller-skating, self-recovery) is a neural policy trained in MuJoCo and exported to ONNX, and the full sim-to-real stack is Apache-2.0 on GitHub. Pre-orders opened on 27 August 2026; first units are expected before Christmas 2026.
 
