@@ -1,6 +1,6 @@
 # Awesome Microduck [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> Software, simulators, policies, agent tools and coverage for Microduck, the $399 open-source biped robot from Pollen Robotics and Hugging Face.
+> Software, simulators, policies, agent tools and coverage for Microduck, the open-source biped robot from Pollen Robotics and Hugging Face.
 
 <p align="center">
   <img src="media/logo.svg" alt="Three stylised biped duck robots" width="640">
