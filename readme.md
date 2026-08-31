@@ -115,7 +115,7 @@ Ways for LLM agents and scripts to drive a duck.
 
 The hardware is not open source (no BOM, CAD or PCB files), but the MJCF and STL meshes are public.
 
-- [microduck-replica](https://github.com/fanhao375/microduck-replica) - Mechanical reconstruction study: assembly and exploded drawings and CAD-importable assemblies derived from the public MJCF/STL model. In Chinese.
+- [microduck-replica](https://github.com/fanhao375/microduck-replica) - Reconstruction study deriving assembly and exploded drawings, CAD-importable assemblies, a fastener list and an electronics teardown (Radxa Zero 3W, TTL servo bus, the two custom boards) from the public MJCF, STL meshes and runtime source, in English and Chinese and not verified against physical hardware.
 
 ## Articles and Coverage
 
