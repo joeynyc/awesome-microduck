@@ -22,6 +22,7 @@ Anything not yet validated on a physical robot should be labeled *sim-only* in i
 - Link to the repository or canonical page, not to a tracker, shortener or referral URL.
 - No trailing whitespace, no hard-wrapping, and check your spelling.
 - Run `npx awesome-lint` locally before submitting; the same check runs on every pull request.
+  If it reports `Awesome list must reside in a valid git repository` or `Invalid GitHub repo URL`, that is the linter looking for a GitHub remote, not a problem with your entry — run it in a clone of your fork rather than a downloaded copy, and the rest of the checks will still tell you what you need.
 
 ## Pull request
 
