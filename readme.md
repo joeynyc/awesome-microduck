@@ -34,7 +34,7 @@ The robot is pre-hardware: pre-orders are open, shipping is targeted for Decembe
 
 **Hardware-facing tools are pre-validation.** MCP servers, gateways and CLIs that target the real `robotd` API are written against the published design docs and mock transports; none listed here has been exercised on a shipped unit.
 
-**Policy distribution is half-shipped.** Pollen published the nine shipped policies to the Hub as `microduck-policies` on 31 August 2026, so the weights are now downloadable on their own. The updater side is not built: roadmap milestone M8 (“Model channel”) still lists installing and rolling back a policy with `robotctl update apply` as the next unstarted work, so community policy catalogs remain browse-only.
+**Policy distribution is landing now.** Pollen published the nine shipped policies to the Hub as `microduck-policies` on 31 August 2026, and the policy channel (roadmap milestone M8) is being built on the `policy-hub-design` branch, with parts of it done as of the same date. The design sets a convention worth building against: one `.onnx` per Hub repo alongside a `manifest.json` giving observation and action dimensions, model API version and robot compatibility, driven by `robotctl policy list | load | reset | check | update | search`. None of it is on `main` yet, so today a policy still reaches a robot by hand.
 
 Entries marked *sim-only* have not been validated on hardware.
 
@@ -58,6 +58,7 @@ All from the `pollen-robotics/microduck` repository.
 - [Cheat sheet](https://github.com/pollen-robotics/microduck/blob/main/docs/robot/cheatsheet.md) - `robotctl` commands for day-to-day use of the robot.
 - [Architecture](https://github.com/pollen-robotics/microduck/blob/main/docs/design/architecture.md) - How the daemons, control loop, policies and updater fit together.
 - [Design docs](https://github.com/pollen-robotics/microduck/tree/main/docs/design) - `robotd`, updater, remote WebRTC, boot recovery, restart order and the WebRTC console.
+- [Policy channel design](https://github.com/pollen-robotics/microduck/blob/policy-hub-design/docs/design/policy-channel-design.md) - How community policies will reach robots: the Hub repo layout, the `manifest.json` contract and the `robotctl policy` commands. On a branch, not yet merged.
 - [Roadmap](https://github.com/pollen-robotics/microduck/blob/main/docs/project/roadmap.md) - Milestones M1–M9, including the Hub model channel (M8) and autonomous brain (M9).
 - [duckctl](https://github.com/pollen-robotics/microduck/blob/main/docs/robot/duckctl.md) - Controlling the robot from a laptop over Bluetooth.
 - [Pair a gamepad](https://github.com/pollen-robotics/microduck/blob/main/docs/robot/pair-a-gamepad.md) - Bonding a controller to the robot.
