@@ -84,6 +84,7 @@ All from the `pollen-robotics/microduck` repository.
 - [Microduck School](https://huggingface.co/spaces/ysharma/gr-workflow-microduck-school) - Hosted Space where you set a lesson in plain English and watch the duck fail, retry and improve while the score climbs.
 - [MicroDuck Playground](https://github.com/Vottivott/microduck-playground) - Independent continuation of `microduck_rl` collecting reproducible experiments, policy demonstrations and printable hardware add-ons, rebased on a pinned upstream commit.
 - [Wicroduck](https://github.com/ngxson/wicroduck) - Attempt to put the whole loop behind a URL: MuJoCo compiled to WebAssembly steps the real MJCF in the browser with no Python and no backend. Simulation works today; in-browser training is the goal, not yet the state. *Sim-only.*
+- [microdux](https://github.com/noahfarr/microdux) - JAX and MJX port of the training stack to MuJoCo Playground, with all fourteen official tasks registered for `registry.load` and the reward set checked term by term against upstream on a frozen transition. *Sim-only.*
 
 ## Policies and Skills
 
