@@ -13,7 +13,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node --test scripts/sync-policy-registry.test.mjs
+      - run: node --test scripts/*.test.mjs
       - run: node scripts/sync-policy-registry.mjs
       - run: npx --yes ajv-cli@5 validate -s policies.schema.json -d policies.json --spec=draft2020
+      - run: npx --yes ajv-cli@5 validate -s revocations.schema.json -d revocations.json --spec=draft2020
+      - run: node scripts/validate-revocations.mjs
       - run: npx --yes awesome-lint

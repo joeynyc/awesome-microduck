@@ -43,6 +43,22 @@ Policy authors who do not want to edit the list directly can use the
 A maintainer can review the source and turn the submission into the same
 versioned registry change.
 
+## Emergency policy revocation
+
+If a listed policy is compromised, removed, malicious, materially mislabeled,
+or superseded for safety reasons, add it to `revocations.json` immediately. Use
+the registry `id`, an ISO date, a concise factual reason, and an advisory URL
+when one exists. A replacement may identify another registry entry but must not
+reference the revoked entry itself. Do not delete the original catalog history:
+revocation consumers need the stable identity to block copies already imported.
+
+Run these checks before opening the pull request:
+
+```sh
+npx --yes ajv-cli@5 validate -s revocations.schema.json -d revocations.json --spec=draft2020
+node scripts/validate-revocations.mjs
+```
+
 ## Pull request
 
 - Title: `Add Name of Project`.
