@@ -24,6 +24,20 @@ Anything not yet validated on a physical robot should be labeled *sim-only* in i
 - Run `npx awesome-lint` locally before submitting; the same check runs on every pull request.
   If it reports `Awesome list must reside in a valid git repository` or `Invalid GitHub repo URL`, that is the linter looking for a GitHub remote, not a problem with your entry — run it in a clone of your fork rather than a downloaded copy, and the rest of the checks will still tell you what you need.
 
+Entries in **Policies and Skills** also power the machine-readable community
+feed used by MicroDuck Lab and DuckHub. After changing that section, regenerate
+and verify the feed:
+
+```bash
+node scripts/sync-policy-registry.mjs --write
+node scripts/sync-policy-registry.mjs
+```
+
+Commit the resulting `policies.json` with your README change. Hugging Face model
+repositories are marked for live artifact probing; GitHub repositories are
+listed as source-only until an application verifies a publishable policy
+artifact. CI rejects stale or duplicate registry entries.
+
 ## Pull request
 
 - Title: `Add Name of Project`.

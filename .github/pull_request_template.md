@@ -10,3 +10,4 @@
 - [ ] Added at the end of the most relevant section
 - [ ] Labeled *sim-only* if not validated on hardware
 - [ ] `npx awesome-lint` passes
+- [ ] If this changes Policies and Skills, `node scripts/sync-policy-registry.mjs --write` was run and `policies.json` is committed

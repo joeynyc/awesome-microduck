@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "generated_from": "readme.md#policies-and-skills",
+  "entries": [
+    {
+      "id": "github:Lulzx/microduck-backflip",
+      "name": "microduck-backflip",
+      "provider": "github",
+      "repo_id": "Lulzx/microduck-backflip",
+      "source": "https://github.com/Lulzx/microduck-backflip",
+      "description": "Reproducible mjlab backflip task with an evaluation battery, experiment log and explicit safety gates. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "github:selinayfilizp/microduck-courier",
+      "name": "microduck-courier",
+      "provider": "github",
+      "repo_id": "selinayfilizp/microduck-courier",
+      "source": "https://github.com/selinayfilizp/microduck-courier",
+      "description": "Pick-carry-place task in an apartment scene with a trained policy, rollout clip and telemetry. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "github:Liyucheng1997/318_lab-microduck-simulator",
+      "name": "Jump playground",
+      "provider": "github",
+      "repo_id": "Liyucheng1997/318_lab-microduck-simulator",
+      "source": "https://github.com/Liyucheng1997/318_lab-microduck-simulator",
+      "description": "Browser sandbox fork with a custom-trained vertical-jump policy; live demo. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "github:pezzonovante7/microduck-sidekick-dance",
+      "name": "microduck-sidekick-dance",
+      "provider": "github",
+      "repo_id": "pezzonovante7/microduck-sidekick-dance",
+      "source": "https://github.com/pezzonovante7/microduck-sidekick-dance",
+      "description": "Drop-in mjlab task for a lateral dance step, with reward design notes. Task only, not yet trained.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "github:bihaokun/microduck-step-up-policy",
+      "name": "microduck-step-up-policy",
+      "provider": "github",
+      "repo_id": "bihaokun/microduck-step-up-policy",
+      "source": "https://github.com/bihaokun/microduck-step-up-policy",
+      "description": "Policy pair for crossing a 25 mm square-edged step using the head as a temporary brake, then recovering upright; weights on the Hub. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "github:ThomasBurgess2000/microduck-max-height-jump",
+      "name": "microduck-max-height-jump",
+      "provider": "github",
+      "repo_id": "ThomasBurgess2000/microduck-max-height-jump",
+      "source": "https://github.com/ThomasBurgess2000/microduck-max-height-jump",
+      "description": "Deployable ONNX export and reproducibility evidence for a one-shot PPO jump, with the height claim stated as a training objective rather than a physical maximum. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "github:alertform/microduck-walking",
+      "name": "microduck-walking yaw ablation",
+      "provider": "github",
+      "repo_id": "alertform/microduck-walking",
+      "source": "https://github.com/alertform/microduck-walking",
+      "description": "Single-variable reward ablation that cuts yaw-rate variance against the released alphawalking baseline, with the evaluation harness that makes the comparison reproducible. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "github:ros-claw/microduck",
+      "name": "Microduck Circus",
+      "provider": "github",
+      "repo_id": "ros-claw/microduck",
+      "source": "https://github.com/ros-claw/microduck",
+      "description": "Three ducks learn to skip a shared long rope, two turning and one jumping, through an act-fail-practice-adapt agent loop with a holdout round. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "github:reachjalil/nottyduck",
+      "name": "nottyduck",
+      "provider": "github",
+      "repo_id": "reachjalil/nottyduck",
+      "source": "https://github.com/reachjalil/nottyduck",
+      "description": "Desk-companion persona with trained gesture policies, a 3D office mapper and a Hugging Face Jobs training CLI; policies on the Hub.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "huggingface:RemiFabre/microduck-flamingo-cycle",
+      "name": "microduck-flamingo-cycle",
+      "provider": "huggingface",
+      "repo_id": "RemiFabre/microduck-flamingo-cycle",
+      "source": "https://huggingface.co/RemiFabre/microduck-flamingo-cycle",
+      "description": "One-legged flamingo pose policy on the Hugging Face Hub.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:fffiloni/microduck-polite-bow-b1d864",
+      "name": "microduck-polite-bow",
+      "provider": "huggingface",
+      "repo_id": "fffiloni/microduck-polite-bow-b1d864",
+      "source": "https://huggingface.co/fffiloni/microduck-polite-bow-b1d864",
+      "description": "Bow gesture policy on the Hugging Face Hub.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:fffiloni/microduck-moonwalk-backward-55e6af",
+      "name": "microduck-moonwalk-backward",
+      "provider": "huggingface",
+      "repo_id": "fffiloni/microduck-moonwalk-backward-55e6af",
+      "source": "https://huggingface.co/fffiloni/microduck-moonwalk-backward-55e6af",
+      "description": "Backward moonwalk gait on the Hugging Face Hub.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:HannesVonEssen/microduck-basketball",
+      "name": "microduck-basketball",
+      "provider": "huggingface",
+      "repo_id": "HannesVonEssen/microduck-basketball",
+      "source": "https://huggingface.co/HannesVonEssen/microduck-basketball",
+      "description": "Balances on a free-rolling size-7 basketball and follows velocity commands from proprioception alone, through a one-layer LSTM with no ball state in the actor inputs. Simulation and export checks pass; onboard timing and real-robot behavior are untested.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:HannesVonEssen/microduck-swing",
+      "name": "microduck-swing",
+      "provider": "huggingface",
+      "repo_id": "HannesVonEssen/microduck-swing",
+      "source": "https://huggingface.co/HannesVonEssen/microduck-swing",
+      "description": "Starts motionless at the bottom of a two-cord swing and pumps itself with its head and legs to a 173 degree span, with 71 of 100 randomized seeds clearing every full-horizon validity gate and rollouts rejected for cord slack, lateral drift or attachment misalignment rather than judged on angle alone. Printable seat and straps included. Sim-only.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:HannesVonEssen/microduck-stilts",
+      "name": "microduck-stilts",
+      "provider": "huggingface",
+      "repo_id": "HannesVonEssen/microduck-stilts",
+      "source": "https://huggingface.co/HannesVonEssen/microduck-stilts",
+      "description": "Eight forward-walking policies for stilts from 10 cm to 2 metres, each height its own ONNX graph, continuation checkpoint, manifest and video behind a machine-readable index, with the printable stilt hardware alongside. Sim-only.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:HannesVonEssen/microduck-running",
+      "name": "microduck-running",
+      "provider": "huggingface",
+      "repo_id": "HannesVonEssen/microduck-running",
+      "source": "https://huggingface.co/HannesVonEssen/microduck-running",
+      "description": "Running policy robustified from a 1.687 m/s speed frontier with velocity pushes, centre-of-mass variation and initial tilt, holding 1.651 m/s nominal and 1.612 m/s under a combined backlash and disturbance battery. The author calls it a hardware candidate and says heading and lateral drift remain substantial. Sim-only.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:langli11/microduck-tricks",
+      "name": "microduck-tricks",
+      "provider": "huggingface",
+      "repo_id": "langli11/microduck-tricks",
+      "source": "https://huggingface.co/langli11/microduck-tricks",
+      "description": "Three skills trained on Hugging Face Jobs and scored on held-out batteries against the shipped policies: a run into a forward roll that hands off from walking 200 times out of 200 where the official policy manages 86 percent, a cone slalom that clears 8 of 8 gates without a fall where the official policy clears 21 percent, and a one-foot skate that lifts a blade for 0.4 to 0.6 seconds of true single support and skates on, 24 takes without a fall. A sustained one-blade glide is reported as unreachable on this robot, with the measured ceiling. Sim-only.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "github:hikarioyama/microduck-onefoot-skate",
+      "name": "microduck-onefoot-skate",
+      "provider": "github",
+      "repo_id": "hikarioyama/microduck-onefoot-skate",
+      "source": "https://github.com/hikarioyama/microduck-onefoot-skate",
+      "description": "Interim checkpoint on a sustained left-foot glide, published as method and measurements rather than as a result: the declared 2.0 second gate is cleared by only 1 episode in 64 and no stage has passed formal acceptance, but 96.9 percent hold a credible one-foot glide past 1.0 second and the best recorded is 2.14 seconds. Carries the learnable-authority audit that found 35 percent of every episode had nothing to learn, two spawn-state defects traced to wheel velocities in the observation, all 15 training runs as curves, signed decision records, and an ONNX path documented well enough to drive the policies without installing MuJoCo. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "huggingface:pngwn/microduck-detector",
+      "name": "microduck-detector",
+      "provider": "huggingface",
+      "repo_id": "pngwn/microduck-detector",
+      "source": "https://huggingface.co/pngwn/microduck-detector",
+      "description": "YOLO11n detector that finds a Microduck in an image, 2.6M parameters, scored at 0.63 mAP50 on a held-out split of synthetic renders and real press photos; try it in what-the-microduck.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:Datawhale/Microduck-RL-4096x6000",
+      "name": "Microduck RL 4096x6000",
+      "provider": "huggingface",
+      "repo_id": "Datawhale/Microduck-RL-4096x6000",
+      "source": "https://huggingface.co/Datawhale/Microduck-RL-4096x6000",
+      "description": "Velocity-tracking reproduction pinned to an upstream commit: 4096 parallel environments, 6000 PPO iterations, with intermediate checkpoints, the ONNX export, training config, TensorBoard events and closed-loop replay video all kept. Sim-only.",
+      "artifact_mode": "probe-provider"
+    }
+  ]
+}
