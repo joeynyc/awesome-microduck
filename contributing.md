@@ -38,6 +38,11 @@ repositories are marked for live artifact probing; GitHub repositories are
 listed as source-only until an application verifies a publishable policy
 artifact. CI rejects stale or duplicate registry entries.
 
+Policy authors who do not want to edit the list directly can use the
+[community policy submission form](https://github.com/joeynyc/awesome-microduck/issues/new?template=policy-submission.yml).
+A maintainer can review the source and turn the submission into the same
+versioned registry change.
+
 ## Pull request
 
 - Title: `Add Name of Project`.

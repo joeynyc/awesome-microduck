@@ -102,6 +102,8 @@ All from the `pollen-robotics/microduck` repository.
 Community-trained policies and task definitions built on `microduck_rl`.
 This section also publishes a versioned [machine-readable registry](policies.json)
 for MicroDuck Lab and DuckHub.
+[Submit a policy](https://github.com/joeynyc/awesome-microduck/issues/new?template=policy-submission.yml)
+with the structured community form.
 
 - [microduck-backflip](https://github.com/Lulzx/microduck-backflip) - Reproducible mjlab backflip task with an evaluation battery, experiment log and explicit safety gates. *Sim-only.*
 - [microduck-courier](https://github.com/selinayfilizp/microduck-courier) - Pick-carry-place task in an apartment scene with a trained policy, rollout clip and telemetry. *Sim-only.*
