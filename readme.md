@@ -101,7 +101,10 @@ All from the `pollen-robotics/microduck` repository.
 
 Community-trained policies and task definitions built on `microduck_rl`.
 This section also publishes a versioned [machine-readable registry](policies.json)
-for MicroDuck Lab and DuckHub.
+for MicroDuck Lab and DuckHub. Known unsafe, compromised, removed, or superseded
+entries are published separately in the machine-readable
+[revocation registry](revocations.json). Consumers should resolve both files
+from the same verified Git commit and stop a revoked policy before execution.
 [Submit a policy](https://github.com/joeynyc/awesome-microduck/issues/new?template=policy-submission.yml)
 with the structured community form.
 
