@@ -1,0 +1,47 @@
+name: Submit a community policy
+description: Propose a MicroDuck policy or task for the shared Lab and DuckHub catalog.
+title: "[Policy]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your work. This form feeds the curated registry used by MicroDuck Lab and DuckHub. A maintainer will review the source and open or help finish the catalog change.
+  - type: input
+    id: source
+    attributes:
+      label: Repository URL
+      description: Link to one public Hugging Face model repository or GitHub repository.
+      placeholder: https://huggingface.co/author/microduck-policy
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What does it do?
+      description: Describe the behavior, evidence, and current limitations in a few concrete sentences.
+    validations:
+      required: true
+  - type: dropdown
+    id: validation
+    attributes:
+      label: Validation status
+      options:
+        - Simulation only
+        - Tested on MicroDuck hardware
+        - Task or source project; no importable policy yet
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Artifacts and evidence
+      description: Link any policy.onnx, manifest.json, rollout video, evaluation results, or reproduction notes.
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Publisher checks
+      options:
+        - label: I have permission to publish and link this work.
+          required: true
+        - label: I have stated whether the policy was tested on physical hardware.
+          required: true
