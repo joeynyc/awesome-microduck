@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/joeynyc/awesome-microduck/main/policies.schema.json",
+  "title": "awesome-microduck policy registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "generated_from", "entries"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "generated_from": { "const": "readme.md#policies-and-skills" },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "provider", "repo_id", "source", "description", "artifact_mode"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^(huggingface|github):[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+          "name": { "type": "string", "minLength": 1 },
+          "provider": { "enum": ["huggingface", "github"] },
+          "repo_id": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+          "source": { "type": "string", "pattern": "^https://" },
+          "description": { "type": "string", "minLength": 1 },
+          "artifact_mode": { "enum": ["probe-provider", "source-only"] }
+        }
+      }
+    }
+  }
+}
