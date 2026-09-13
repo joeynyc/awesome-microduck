@@ -111,6 +111,15 @@
       "artifact_mode": "probe-provider"
     },
     {
+      "id": "huggingface:torchrl/microduck-skills",
+      "name": "MicroDuck skills for TorchRL",
+      "provider": "huggingface",
+      "repo_id": "torchrl/microduck-skills",
+      "source": "https://huggingface.co/torchrl/microduck-skills",
+      "description": "One recurrent task-conditioned policy covering seven skills (stand, four directions, turn each way) through a task embedding and a 128-unit GRU, trained on 12 million transitions across 16 native CPU environments, with all 56 evaluation episodes surviving the full horizon. Published by the TorchRL project, which also states its known limits: the head still drops about 63 degrees walking backward, and turns reach roughly two thirds of the commanded rate. Sim-only.",
+      "artifact_mode": "probe-provider"
+    },
+    {
       "id": "huggingface:HannesVonEssen/microduck-basketball",
       "name": "microduck-basketball",
       "provider": "huggingface",
