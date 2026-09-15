@@ -156,6 +156,15 @@
       "artifact_mode": "probe-provider"
     },
     {
+      "id": "huggingface:HannesVonEssen/microduck-climb",
+      "name": "microduck-climb",
+      "provider": "huggingface",
+      "repo_id": "HannesVonEssen/microduck-climb",
+      "source": "https://huggingface.co/HannesVonEssen/microduck-climb",
+      "description": "A climbing policy and a get-up policy for a desk ladder, with full checkpoints, hashes and printable ladder parts. The switch between them reads simulator contact rather than an onboard detector, and the ladder parts are geometry-checked but not yet printed or load-tested. Sim-only.",
+      "artifact_mode": "probe-provider"
+    },
+    {
       "id": "huggingface:langli11/microduck-tricks",
       "name": "microduck-tricks",
       "provider": "huggingface",
