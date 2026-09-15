@@ -165,6 +165,51 @@
       "artifact_mode": "probe-provider"
     },
     {
+      "id": "huggingface:joanfox/microduck-happy-hop",
+      "name": "microduck-happy-hop",
+      "provider": "huggingface",
+      "repo_id": "joanfox/microduck-happy-hop",
+      "source": "https://huggingface.co/joanfox/microduck-happy-hop",
+      "description": "Short two-foot hop that crouches, takes off, absorbs the landing and returns home, and one of the first community policies shown running on a physical MicroDuck, after Pollen restored the one-step action delay it depends on. The card states that delay alongside the rest of the contract.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "github:llama/microduck-beak-throw",
+      "name": "beak-throw",
+      "provider": "github",
+      "repo_id": "llama/microduck-beak-throw",
+      "source": "https://github.com/llama/microduck-beak-throw",
+      "description": "Winds up, throws a 24 mm ball from the beak and recovers to a stand as a one-shot skill, with weights on the Hub. It completed 50 of 50 randomized trials only with a mandatory runtime clamp and failed the stricter raw-output gate, and a safety note governs any first hardware run. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "github:zhoumiaosen/microduck-rl",
+      "name": "microduck-rl running",
+      "provider": "github",
+      "repo_id": "zhoumiaosen/microduck-rl",
+      "source": "https://github.com/zhoumiaosen/microduck-rl",
+      "description": "Training repository with 39 registered tasks and a published straight-running policy holding 1.844 m/s over 10 seconds and 1.806 m/s over 30 under a heading-hold controller, stating plainly that the 2.0 m/s target was not met. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "huggingface:RemiFabre/microduck-rough-walk-e",
+      "name": "rough-walk-e",
+      "provider": "huggingface",
+      "repo_id": "RemiFabre/microduck-rough-walk-e",
+      "source": "https://huggingface.co/RemiFabre/microduck-rough-walk-e",
+      "description": "Drop-in replacement for alphawalking fine-tuned on a hostile-terrain ladder of tiles, small stairs, rubble and slopes, with roughly half the falls; the from-scratch rough-walk-g is sturdier on stairs and slopes at 17 percent more motor power. Stated limits include falling on downward steps of 2 cm or more. Sim-only.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:Teethyfish/microduck-collision-flamingo-ii",
+      "name": "Collision Flamingo II",
+      "provider": "huggingface",
+      "repo_id": "Teethyfish/microduck-collision-flamingo-ii",
+      "source": "https://huggingface.co/Teethyfish/microduck-collision-flamingo-ii",
+      "description": "One-foot balance trained against a full exterior-shell collision model, shipped with the exact overlay needed to reproduce it. It works through the ONNX deployment rehearsal but not through the training repository's own play viewers, and the card reports that discrepancy as unresolved. Sim-only.",
+      "artifact_mode": "probe-provider"
+    },
+    {
       "id": "huggingface:langli11/microduck-tricks",
       "name": "microduck-tricks",
       "provider": "huggingface",
@@ -197,7 +242,7 @@
       "provider": "huggingface",
       "repo_id": "Datawhale/Microduck-RL-4096x6000",
       "source": "https://huggingface.co/Datawhale/Microduck-RL-4096x6000",
-      "description": "Velocity-tracking reproduction pinned to an upstream commit: 4096 parallel environments, 6000 PPO iterations, with intermediate checkpoints, the ONNX export, training config, TensorBoard events and closed-loop replay video all kept. Sim-only.",
+      "description": "Velocity-tracking reproduction pinned to an upstream commit: 4096 parallel environments, 6000 PPO iterations, with intermediate checkpoints, the ONNX export, training config, TensorBoard events and closed-loop replay video all kept, and a matching ball-kick run keeps the same record. Sim-only.",
       "artifact_mode": "probe-provider"
     }
   ]
