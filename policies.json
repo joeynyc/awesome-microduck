@@ -210,6 +210,15 @@
       "artifact_mode": "probe-provider"
     },
     {
+      "id": "github:chenp9527/microduck-jump",
+      "name": "MicroDuck Jump",
+      "provider": "github",
+      "repo_id": "chenp9527/microduck-jump",
+      "source": "https://github.com/chenp9527/microduck-jump",
+      "description": "Raises happy-hop's band to an in-place hop of 3 to 6 cm on stock servos, with the checkpoint chosen by in-band rate rather than by recency: over 128 episodes half land inside the band and none fall. Its own acceptance checklist records the failure as well, a 128 N landing peak against a 40 N target, with the fix identified but not yet validated. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
       "id": "huggingface:langli11/microduck-tricks",
       "name": "microduck-tricks",
       "provider": "huggingface",
