@@ -75,15 +75,6 @@
       "artifact_mode": "source-only"
     },
     {
-      "id": "github:reachjalil/nottyduck",
-      "name": "nottyduck",
-      "provider": "github",
-      "repo_id": "reachjalil/nottyduck",
-      "source": "https://github.com/reachjalil/nottyduck",
-      "description": "Desk-companion persona with trained gesture policies, a 3D office mapper and a Hugging Face Jobs training CLI; policies on the Hub.",
-      "artifact_mode": "source-only"
-    },
-    {
       "id": "huggingface:RemiFabre/microduck-flamingo-cycle",
       "name": "microduck-flamingo-cycle",
       "provider": "huggingface",
@@ -217,6 +208,15 @@
       "source": "https://github.com/chenp9527/microduck-jump",
       "description": "Raises happy-hop's band to an in-place hop of 3 to 6 cm on stock servos, with the checkpoint chosen by in-band rate rather than by recency: over 128 episodes half land inside the band and none fall. Its own acceptance checklist records the failure as well, a 128 N landing peak against a 40 N target, with the fix identified but not yet validated. Sim-only.",
       "artifact_mode": "source-only"
+    },
+    {
+      "id": "huggingface:QingMuLYL/microduck-standup",
+      "name": "microduck-standup",
+      "provider": "huggingface",
+      "repo_id": "QingMuLYL/microduck-standup",
+      "source": "https://huggingface.co/QingMuLYL/microduck-standup",
+      "description": "Episodic get-up that runs for six seconds and returns itself to a standing pose, published against manifest schema 2 with its robotctl policy add line and its training branch and commit named. The card also admits the export came from a checkout with uncommitted changes. Sim-only.",
+      "artifact_mode": "probe-provider"
     },
     {
       "id": "huggingface:langli11/microduck-tricks",
