@@ -219,6 +219,24 @@
       "artifact_mode": "probe-provider"
     },
     {
+      "id": "github:zachgarner/microduck-headstand",
+      "name": "Microduck headstand",
+      "provider": "github",
+      "repo_id": "zachgarner/microduck-headstand",
+      "source": "https://github.com/zachgarner/microduck-headstand",
+      "description": "Six policies chained into an acrobatic routine, folding, kicking up with legs together, rolling back, entering a split headstand, switching the leading leg and splitting over to standing, with the official standing policy between moves. The full routine passed 87 of 96 attempts across three seeds and each policy 32 of 32, with raw reports, checkpoints and normalised ONNX exports on the Hub and the training tasks proposed upstream. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "github:toyhank/microduck-vision-soccer",
+      "name": "Microduck Vision Soccer",
+      "provider": "github",
+      "repo_id": "toyhank/microduck-vision-soccer",
+      "source": "https://github.com/toyhank/microduck-vision-soccer",
+      "description": "Head-camera striker against a monocular goalkeeper, built so the same perception and state machine can run on the robot through mediad and robotd. Its frozen ground-truth navigation baseline scored 98 of 100 goals with no falls, reported separately from the camera-driven controller on purpose; full soccer has not been run on hardware. Apache-2.0. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
       "id": "huggingface:langli11/microduck-tricks",
       "name": "microduck-tricks",
       "provider": "huggingface",
