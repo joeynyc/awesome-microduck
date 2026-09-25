@@ -184,6 +184,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [Harboria](https://github.com/Harboria/harboria) - Rust runtime for an assistant that holds long-term context and decides when to intervene, rather than answering one request at a time, with the duck as its first adapter. Apache-2.0 and early: the domain model and daemon are there, the robot side is not yet exercised on hardware.
 - [Jev drives a MicroDuck](https://github.com/miguelaeh/jev-microduck) - Replaces the gamepad with a typed-judgment model that sees only the head camera rendered as characters and picks the next move about every 150 ms, leaving the 50 Hz locomotion policy untouched. *Sim-only.*
 - [Jevduck](https://github.com/amazedsaint/jevduck) - Browser research simulator asking whether a model can choose useful next actions from measured robot state while a separate controller keeps execution bounded, and keeping an accepted instruction and the physical result it actually produced as separate events. MuJoCo WebAssembly with the official policies, a [live build](https://jevduck.vercel.app/) and a validation record. *Sim-only.*
+- [quack-nav](https://github.com/andreagenovese/quacknav) - Navigation daemon beside the released `robotd`: time-of-flight mapping and relocalization, a cliff guard, a costmap planner, named places, an explorer that maps a house a charge at a time and `go_to`, as JSON-RPC tools, with its twin results published, misses included. Apache-2.0, in English and Italian. *Sim-only.*
 
 ## Community Hubs and Registries
 
