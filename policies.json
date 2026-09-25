@@ -152,7 +152,7 @@
       "provider": "huggingface",
       "repo_id": "HannesVonEssen/microduck-climb",
       "source": "https://huggingface.co/HannesVonEssen/microduck-climb",
-      "description": "A climbing policy and a get-up policy for a desk ladder, with full checkpoints, hashes and printable ladder parts. The switch between them reads simulator contact rather than an onboard detector, and the ladder parts are geometry-checked but not yet printed or load-tested. Sim-only.",
+      "description": "A climbing policy and a get-up policy for a desk ladder, with full checkpoints, hashes and printable ladder parts. The switch between them reads simulator contact rather than an onboard detector, and the ladder parts are geometry-checked but not yet printed or load-tested. A chimney variant climbs a narrow corridor by bracing between two walls. Sim-only.",
       "artifact_mode": "probe-provider"
     },
     {
@@ -234,6 +234,15 @@
       "repo_id": "toyhank/microduck-vision-soccer",
       "source": "https://github.com/toyhank/microduck-vision-soccer",
       "description": "Head-camera striker against a monocular goalkeeper, built so the same perception and state machine can run on the robot through mediad and robotd. Its frozen ground-truth navigation baseline scored 98 of 100 goals with no falls, reported separately from the camera-driven controller on purpose; full soccer has not been run on hardware. Apache-2.0. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
+      "id": "github:AungKaung1928/microduck-rl",
+      "name": "microduck-rl (CPU)",
+      "provider": "github",
+      "repo_id": "AungKaung1928/microduck-rl",
+      "source": "https://github.com/AungKaung1928/microduck-rl",
+      "description": "Balance-and-recover policy trained on a laptop with no GPU in plain CPU MuJoCo, evaluated on physics models the robot's own authors supplied rather than on its own randomisation. The first 25M-step training chunk beats a PD baseline, and the repository reports that its domain randomisation, as run, made standing worse. Its tests also catch a silent indexing bug that is wrong on 13 of 14 joints on the backlash model. MIT. Sim-only.",
       "artifact_mode": "source-only"
     },
     {
