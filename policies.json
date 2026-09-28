@@ -246,6 +246,15 @@
       "artifact_mode": "source-only"
     },
     {
+      "id": "github:KhushiJ2911/microduck-piano-learning",
+      "name": "MicroDuck Piano Learning",
+      "provider": "github",
+      "repo_id": "KhushiJ2911/microduck-piano-learning",
+      "source": "https://github.com/KhushiJ2911/microduck-piano-learning",
+      "description": "Two ducks walking across a passive floor keyboard, published as an honest snapshot: one accepted traversal in which 1 of 64 evaluation worlds passed every strict gate, pressing and releasing six keys without a fall. Its author is clear it is not yet a score-following performance. Apache-2.0. Sim-only.",
+      "artifact_mode": "source-only"
+    },
+    {
       "id": "huggingface:langli11/microduck-tricks",
       "name": "microduck-tricks",
       "provider": "huggingface",
