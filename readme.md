@@ -1,9 +1,9 @@
 # Awesome Microduck [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> Software, simulators, policies, agent tools and coverage for Microduck, the open-source biped robot from Pollen Robotics and Hugging Face.
+> Open-source biped robot from Pollen Robotics and Hugging Face.
 
 <p align="center">
-  <img src="media/logo.svg" alt="Three stylised biped duck robots" width="640">
+  <a href="https://pollen-robotics.com/microduck"><img src="media/logo.svg" alt="Three stylised biped duck robots" width="600"></a>
 </p>
 
 Microduck is a 25 cm, ~800 g walking duck with 15 motors, a camera, an 8×8 ToF depth sensor, two IMUs and a grasping beak. Every behavior it ships with (walking, sit/stand, kicking, ground pick, roller-skating, self-recovery) is a neural policy trained in MuJoCo and exported to ONNX, and the full sim-to-real stack is Apache-2.0 on GitHub. Pre-orders opened on 27 August 2026; first units are expected before Christmas 2026.
@@ -120,13 +120,8 @@ All from the `pollen-robotics/microduck` repository.
 ## Policies and Skills
 
 Community-trained policies and task definitions built on `microduck_rl`.
-This section also publishes a versioned [machine-readable registry](policies.json)
-for MicroDuck Lab and DuckHub. Known unsafe, compromised, removed, or superseded
-entries are published separately in the machine-readable
-[revocation registry](revocations.json). Consumers should resolve both files
-from the same verified Git commit and stop a revoked policy before execution.
-[Submit a policy](https://github.com/joeynyc/awesome-microduck/issues/new?template=policy-submission.yml)
-with the structured community form.
+
+This section also publishes a versioned [machine-readable registry](policies.json) for MicroDuck Lab and DuckHub. Known unsafe, compromised, removed, or superseded entries are published separately in the machine-readable [revocation registry](revocations.json). Consumers should resolve both files from the same verified Git commit and stop a revoked policy before execution. [Submit a policy](https://github.com/joeynyc/awesome-microduck/issues/new?template=policy-submission.yml) with the structured community form.
 
 - [microduck-backflip](https://github.com/Lulzx/microduck-backflip) - Reproducible mjlab backflip task with an evaluation battery, experiment log and explicit safety gates. *Sim-only.*
 - [microduck-courier](https://github.com/selinayfilizp/microduck-courier) - Pick-carry-place task in an apartment scene with a trained policy, rollout clip and telemetry. *Sim-only.*
