@@ -219,6 +219,15 @@
       "artifact_mode": "probe-provider"
     },
     {
+      "id": "huggingface:kramp/microduck-groove",
+      "name": "microduck-groove",
+      "provider": "huggingface",
+      "repo_id": "kramp/microduck-groove",
+      "source": "https://huggingface.co/kramp/microduck-groove",
+      "description": "A ten-second in-place dance of rhythmic knee bounce and a small head sway that returns to standing, published with its robotctl policy add line. In simulation it never falls, with 1.6 degrees of trunk tilt at most, and it bounces at 87 percent of the reference amplitude and about 126 BPM against a 100 BPM target; the planned head nod, tilt and hip sway were not learned. The training fork is unpublished, so its commit does not exist upstream. Sim-only.",
+      "artifact_mode": "probe-provider"
+    },
+    {
       "id": "github:zachgarner/microduck-headstand",
       "name": "Microduck headstand",
       "provider": "github",
