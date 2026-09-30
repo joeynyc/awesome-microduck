@@ -156,6 +156,15 @@
       "artifact_mode": "probe-provider"
     },
     {
+      "id": "huggingface:HannesVonEssen/microduck-backflip",
+      "name": "Raised-platform backflip and long jump",
+      "provider": "huggingface",
+      "repo_id": "HannesVonEssen/microduck-backflip",
+      "source": "https://huggingface.co/HannesVonEssen/microduck-backflip",
+      "description": "Two jump policies from a raised platform, a backflip dropping 0.8 m onto a soft-contact mat and a long jump across a 30 cm gap down to a lower platform, each with a checkpoint, an ONNX export and a config naming the command slots. The backflip card warns that landings may break the robot and that a soft simulated mat says nothing about a rigid floor. Apache-2.0. Sim-only.",
+      "artifact_mode": "probe-provider"
+    },
+    {
       "id": "huggingface:joanfox/microduck-happy-hop",
       "name": "microduck-happy-hop",
       "provider": "huggingface",
