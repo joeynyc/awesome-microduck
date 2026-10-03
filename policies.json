@@ -237,6 +237,15 @@
       "artifact_mode": "probe-provider"
     },
     {
+      "id": "huggingface:drfonz-indigo/microduck-playdead",
+      "name": "microduck-playdead",
+      "provider": "huggingface",
+      "repo_id": "drfonz-indigo/microduck-playdead",
+      "source": "https://huggingface.co/drfonz-indigo/microduck-playdead",
+      "description": "A five-second episodic policy that sits, flops onto its back with legs up and the head turned, published with the caveats in its card: it ends lying down, so the next policy must be one that can get up (velstand managed 32 of 32 headless attempts, but springs up fast), and the beak is not among the 14 actions so the runtime has to open it. In 256-duck evaluations it never ended on a side or face. Sim-only.",
+      "artifact_mode": "probe-provider"
+    },
+    {
       "id": "github:zachgarner/microduck-headstand",
       "name": "Microduck headstand",
       "provider": "github",
