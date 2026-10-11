@@ -246,6 +246,15 @@
       "artifact_mode": "probe-provider"
     },
     {
+      "id": "huggingface:cetiennec/microduck-on-sourccey-dome",
+      "name": "on-sourccey-dome",
+      "provider": "huggingface",
+      "repo_id": "cetiennec/microduck-on-sourccey-dome",
+      "source": "https://huggingface.co/cetiennec/microduck-on-sourccey-dome",
+      "description": "Balances on top of a moving Sourccey robot's 3D-printed dome, trained with the daemon's own target low-pass and standing gain. In held-out sim-to-sim runs on the full Sourccey it held 13 of 16 thirty-second trials, up from 7 of 16 for the previous version. Sim-only.",
+      "artifact_mode": "probe-provider"
+    },
+    {
       "id": "github:zachgarner/microduck-headstand",
       "name": "Microduck headstand",
       "provider": "github",
