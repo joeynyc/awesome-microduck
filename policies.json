@@ -334,6 +334,15 @@
       "source": "https://huggingface.co/Datawhale/Microduck-RL-4096x6000",
       "description": "Velocity-tracking reproduction pinned to an upstream commit: 4096 parallel environments, 6000 PPO iterations, with intermediate checkpoints, the ONNX export, training config, TensorBoard events and closed-loop replay video all kept, and a matching ball-kick run keeps the same record. Sim-only.",
       "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "github:wat-bill/microduck-action-pack",
+      "name": "Microduck action pack",
+      "provider": "github",
+      "repo_id": "wat-bill/microduck-action-pack",
+      "source": "https://github.com/wat-bill/microduck-action-pack",
+      "description": "Head-nod and head-shake rhythm dance for the microduckrl simulator, choreographed only through the headpose and bodypose command channels while the policy keeps balance, with a squat-capable standing policy for the body-height channel. Code Apache-2.0, 3D assets under their upstream non-commercial terms, in Chinese. Sim-only.",
+      "artifact_mode": "source-only"
     }
   ]
 }
