@@ -10,6 +10,8 @@ Microduck is a 25 cm, ~800 g walking duck with 15 motors, a camera, an 8×8 ToF 
 
 *Microduck is a product of [Pollen Robotics](https://pollen-robotics.com) and Hugging Face. This is an independent, community-maintained list — not affiliated with, endorsed by, or sponsored by either company. Product names, logos and brands are the property of their respective owners, and every linked project belongs to its own authors under its own license.*
 
+**Follow [@aijoey](https://x.com/aijoey) on X** for Microduck ecosystem updates as they land.
+
 ## Contents
 
 - [Ecosystem Status](#ecosystem-status)
