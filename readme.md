@@ -270,6 +270,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [ArduPilot Neural Mixer](https://github.com/virtualrobotix/Ardupilot-Neural-Mixer) - Runs a walking policy inside ArduPilot's rover firmware as plain C, with weights loaded from the microSD card and no companion computer. It stands, walks and turns in software-in-the-loop against MuJoCo, and has stood for 15 seconds as hardware-in-the-loop on a Pixhawk 6C; driving a real robot still needs a servo-bus backend. In English and Italian. *Sim-only.*
 - [quack-control](https://github.com/andreagenovese/quack-control) - Local control page for the duck's daemons in a browser on the home network: the map [quack-nav](https://github.com/andreagenovese/quacknav) builds with the duck on it live, tap to send it somewhere, named places, exploration, the head camera, and every navigation tool and knob behind an advanced tab. Apache-2.0, in English and Italian. *Sim-only.*
 - [duck running!](https://wander521.github.io/microduck-running/) - Browser racing game around an island circuit with three ducks driven by ONNX policies on MuJoCo physics, with crashes, crates, rolls and get-ups. Desktop only. [Source](https://github.com/wander521/microduck-running), Apache-2.0.
+- [Curious Explorer](https://github.com/hidrogencloride/microduck-curious-explorer) - Sim-only persona layer that runs short exploratory walks and head movements in the official browser sandbox, yields to manual controls, and includes reproducible scripted checks without replacing its policies.
 
 ## Hardware and Fabrication
 
