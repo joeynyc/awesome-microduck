@@ -280,6 +280,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [Curious Explorer](https://github.com/hidrogencloride/microduck-curious-explorer) - Persona layer that asks the duck's existing software for short exploratory walks and head movements, yields to manual control and never installs or replaces a policy, with reproducible scripted runs in the official browser sandbox. Its author says no installable persona exists yet and the robot connector is unvalidated. Apache-2.0. *Sim-only.*
 - [RoboMasters MicroDuck Simulator](https://github.com/dnorton94/robomasters-microduck) - Educational extension of the official browser simulator that keeps its policies and controls and adds autonomous roam and chase-ball modes, placeable obstacles, interactive sensors and a head-camera view. Apache-2.0. *Sim-only.*
 - [microduck console (paint shop)](https://github.com/lucienxxxxxx/microduck-console) - Browser previewer for 3D-print colour schemes and stickers on each part of the duck before printing. Code MIT, duck meshes under Pollen's non-commercial licence, in Chinese.
+- [MicroDuck for Garry's Mod](https://github.com/DJ210517/microduck-gmod) - Experimental Windows port that brings the walking and roller ducks, their original public ONNX policies and the tricks into Garry's Mod, with a remote and chase camera. The Workshop item is private while testing, so it ships as a release download. Apache-2.0.
 
 ## Hardware and Fabrication
 
@@ -311,6 +312,7 @@ The hardware is not open source (no BOM, CAD or PCB files), but the MJCF and STL
 - [IMU replacement reference](https://github.com/Juxi-Technology/imu-displace-microduck) - Patch and bilingual guide for moving HD-1910 builds to an I²C ICM-42670-P trunk IMU. The data path is verified on hardware; wiring it into `robotd` is not done yet, and the guides say so. Apache-2.0.
 - [Microduck calibration guide](https://github.com/janauto/microduck-calibration-guide) - Read-only joint-direction check for HD-1910 builds: it animates the expected motion, you move the joint by hand, and it shows the encoder change, without ever commanding a servo. MIT, in Chinese.
 - [Microduck HD1910 + BNO085](https://github.com/MHDuck/microduck) - Fork of the runtime adapted to Feetech HD-1910 servos and an I²C BNO085 IMU on a Radxa ZERO 3W, with build, deploy and gamepad docs and a matching [training repository](https://github.com/MHDuck/microduck_rl). Apache-2.0, in Chinese and English.
+- [CMU MicroDuck](https://github.com/qilinxiaoxiang/cmu-microduck) - A hand-built duck from the Carnegie Mellon robotics club, with a Radxa Cubie A7Z in the head and touch pads that make it stop and hold when its head is gripped. It stands and walks on the official policies at 0.25 m/s with a heading hold. The repository records the build as it stood on 23 October, from parts and printing to an 82-step assembly guide and the runtime, and documents an open overheating problem: in the closed head the loop slows to 36 to 42 Hz and the walk diverges. MIT.
 
 ## Articles and Coverage
 
@@ -325,6 +327,9 @@ The hardware is not open source (no BOM, CAD or PCB files), but the MJCF and STL
 - [Interesting Engineering](https://interestingengineering.com/ai-robotics/new-robot-duck-learn-from-its-mistakes) - Overview of the robot's fall recovery and learning loop.
 - [Hacker News discussion](https://news.ycombinator.com/item?id=49462763) - Launch thread with 700+ points, including Pollen engineers answering questions.
 - [Pointcast 031](https://mhoydich.github.io/pointcast-microduck/) - Long-form feature on the hardware, the open stack and programming behavior with agents.
+- [CNX Software](https://www.cnx-software.com/2026/08/28/microduck-a-duck-like-biped-robot-designed-for-physical-ai-experimentation-and-fun/) - Hardware-focused launch write-up covering the RK3566 board, memory and storage, motors and sensors.
+- [The Next Web](https://thenextweb.com/news/hugging-face-microduck-399-open-source-robot) - Launch coverage of the price, the open-source software and which parts are not open.
+- [The Standard](https://www.thestandard.com.hk/finance/article/341576/Hugging-Faces-duck-robot-powered-by-a-Chinese-chip-sold-over-10000-units) - Business report on sales passing 10,000 units, the Rockchip processor and Pollen's aim to deliver before Christmas.
 
 ## Videos
 
