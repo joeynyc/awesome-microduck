@@ -16,7 +16,7 @@ Anything not yet validated on a physical robot should be labeled *sim-only* in i
 
 ## Format
 
-- Add one entry per pull request, at the end of the most relevant section.
+- Add one entry per pull request, at the end of the most relevant section, or of the most relevant `###` subsection where a section has them.
 - Format: `- [Name](link) - Description.` Use the project's own name and capitalization.
 - Descriptions are one sentence, start with a capital letter, end with a period, and say what the thing does, not why it is great.
 - Link to the repository or canonical page, not to a tracker, shortener or referral URL.
