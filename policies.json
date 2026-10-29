@@ -107,7 +107,7 @@
       "provider": "huggingface",
       "repo_id": "torchrl/microduck-skills",
       "source": "https://huggingface.co/torchrl/microduck-skills",
-      "description": "One recurrent task-conditioned policy covering seven skills (stand, four directions, turn each way) through a task embedding and a 128-unit GRU, trained on 12 million transitions across 16 native CPU environments, with all 56 evaluation episodes surviving the full horizon. Published by the TorchRL project, which also states its known limits: the head still drops about 63 degrees walking backward, and turns reach roughly two thirds of the commanded rate. Sim-only.",
+      "description": "One recurrent policy covering seven skills (stand, four directions, two turns) through a task embedding and a GRU, with all 56 evaluation episodes surviving the full horizon. Published by the TorchRL project with its known limits: the head drops about 63 degrees walking backward, and turns reach about two thirds of the commanded rate. Sim-only.",
       "artifact_mode": "probe-provider"
     },
     {
@@ -152,7 +152,7 @@
       "provider": "huggingface",
       "repo_id": "HannesVonEssen/microduck-climb",
       "source": "https://huggingface.co/HannesVonEssen/microduck-climb",
-      "description": "A climbing policy and a get-up policy for a desk ladder, with full checkpoints, hashes and printable ladder parts. The switch between them reads simulator contact rather than an onboard detector, and the ladder parts are geometry-checked but not yet printed or load-tested. A chimney variant climbs a narrow corridor by bracing between two walls. Sim-only.",
+      "description": "Climbing and get-up policies for a desk ladder, with checkpoints, hashes and printable ladder parts. The switch between them reads simulator contact, and the ladder parts are geometry-checked but not yet printed or load-tested. A chimney variant braces between two walls to climb. Sim-only.",
       "artifact_mode": "probe-provider"
     },
     {
@@ -161,7 +161,7 @@
       "provider": "huggingface",
       "repo_id": "HannesVonEssen/microduck-backflip",
       "source": "https://huggingface.co/HannesVonEssen/microduck-backflip",
-      "description": "Two jump policies from a raised platform, a backflip dropping 0.8 m onto a soft-contact mat and a long jump across a 30 cm gap down to a lower platform, each with a checkpoint, an ONNX export and a config naming the command slots. The backflip card warns that landings may break the robot and that a soft simulated mat says nothing about a rigid floor. Apache-2.0. Sim-only.",
+      "description": "A backflip dropping 0.8 m onto a soft mat and a long jump across a 30 cm gap, each with a checkpoint, ONNX and config. The backflip card warns that landings may break the robot and that a soft simulated mat says nothing about a rigid floor. Apache-2.0. Sim-only.",
       "artifact_mode": "probe-provider"
     },
     {
@@ -233,7 +233,7 @@
       "provider": "huggingface",
       "repo_id": "kramp/microduck-groove",
       "source": "https://huggingface.co/kramp/microduck-groove",
-      "description": "A ten-second in-place dance of rhythmic knee bounce and a small head sway that returns to standing, published with its robotctl policy add line. In simulation it never falls, with 1.6 degrees of trunk tilt at most, and it bounces at 87 percent of the reference amplitude and about 126 BPM against a 100 BPM target; the planned head nod, tilt and hip sway were not learned. The training fork is unpublished, so its commit does not exist upstream. Sim-only.",
+      "description": "Ten-second in-place dance of knee bounce and head sway that returns to standing, with its robotctl policy add line. In simulation it never falls, but it bounces at about 126 BPM against a 100 BPM target, and the planned head nod and hip sway were not learned. The training fork is unpublished. Sim-only.",
       "artifact_mode": "probe-provider"
     },
     {
@@ -242,7 +242,7 @@
       "provider": "huggingface",
       "repo_id": "drfonz-indigo/microduck-playdead",
       "source": "https://huggingface.co/drfonz-indigo/microduck-playdead",
-      "description": "A five-second episodic policy that sits, flops onto its back with legs up and the head turned, published with the caveats in its card: it ends lying down, so the next policy must be one that can get up (velstand managed 32 of 32 headless attempts, but springs up fast), and the beak is not among the 14 actions so the runtime has to open it. In 256-duck evaluations it never ended on a side or face. Sim-only.",
+      "description": "Five-second policy that sits, then flops onto its back with legs up and head turned. Its card notes the next policy must be able to get up (velstand did so 32 of 32 times) and that the runtime has to open the beak, which is not among its actions. It never ended on a side or face in 256-duck evaluations. Sim-only.",
       "artifact_mode": "probe-provider"
     },
     {
@@ -269,7 +269,7 @@
       "provider": "github",
       "repo_id": "zachgarner/microduck-headstand",
       "source": "https://github.com/zachgarner/microduck-headstand",
-      "description": "Six policies chained into an acrobatic routine, folding, kicking up with legs together, rolling back, entering a split headstand, switching the leading leg and splitting over to standing, with the official standing policy between moves. The full routine passed 87 of 96 attempts across three seeds and each policy 32 of 32, with raw reports, checkpoints and normalised ONNX exports on the Hub and the training tasks proposed upstream. Sim-only.",
+      "description": "Six policies chained into an acrobatic routine that folds, kicks up, rolls back, holds a split headstand and splits over to standing. The full routine passed 87 of 96 attempts, with checkpoints and ONNX on the Hub and the tasks proposed upstream. Sim-only.",
       "artifact_mode": "source-only"
     },
     {
@@ -287,7 +287,7 @@
       "provider": "github",
       "repo_id": "AungKaung1928/microduck-rl",
       "source": "https://github.com/AungKaung1928/microduck-rl",
-      "description": "Balance-and-recover policy trained on a laptop with no GPU in plain CPU MuJoCo, evaluated on physics models the robot's own authors supplied rather than on its own randomisation. The first 25M-step training chunk beats a PD baseline, and the repository reports that its domain randomisation, as run, made standing worse. Its tests also catch a silent indexing bug that is wrong on 13 of 14 joints on the backlash model. MIT. Sim-only.",
+      "description": "Balance-and-recover policy trained on a laptop with no GPU, evaluated on physics models from the robot's own authors. It beats a PD baseline, reports that its domain randomisation made standing worse, and its tests catch a silent indexing bug affecting 13 of 14 joints on the backlash model. MIT. Sim-only.",
       "artifact_mode": "source-only"
     },
     {
@@ -305,7 +305,7 @@
       "provider": "huggingface",
       "repo_id": "langli11/microduck-tricks",
       "source": "https://huggingface.co/langli11/microduck-tricks",
-      "description": "Three skills trained on Hugging Face Jobs and scored on held-out batteries against the shipped policies: a run into a forward roll that hands off from walking 200 times out of 200 where the official policy manages 86 percent, a cone slalom that clears 8 of 8 gates without a fall where the official policy clears 21 percent, and a one-foot skate that lifts a blade for 0.4 to 0.6 seconds of true single support and skates on, 24 takes without a fall. A sustained one-blade glide is reported as unreachable on this robot, with the measured ceiling. Sim-only.",
+      "description": "Three skills trained on Hugging Face Jobs and scored against the shipped policies on held-out tests: a run into a forward roll (200 of 200 handoffs against 86 percent), a cone slalom (8 of 8 gates against 21 percent) and a one-foot skate. A sustained one-blade glide is reported as unreachable, with the measured ceiling. Sim-only.",
       "artifact_mode": "probe-provider"
     },
     {
@@ -314,7 +314,7 @@
       "provider": "github",
       "repo_id": "hikarioyama/microduck-onefoot-skate",
       "source": "https://github.com/hikarioyama/microduck-onefoot-skate",
-      "description": "Interim checkpoint on a sustained left-foot glide, published as method and measurements rather than as a result: the declared 2.0 second gate is cleared by only 1 episode in 64 and no stage has passed formal acceptance, but 96.9 percent hold a credible one-foot glide past 1.0 second and the best recorded is 2.14 seconds. Carries the learnable-authority audit that found 35 percent of every episode had nothing to learn, two spawn-state defects traced to wheel velocities in the observation, all 15 training runs as curves, signed decision records, and an ONNX path documented well enough to drive the policies without installing MuJoCo. Sim-only.",
+      "description": "Interim checkpoint on a sustained left-foot glide, published as method rather than result: only 1 episode in 64 clears the 2.0 s gate, though 96.9 percent glide past 1.0 s. It includes a training audit, all 15 runs as curves, decision records and an ONNX path that runs without MuJoCo. Sim-only.",
       "artifact_mode": "source-only"
     },
     {

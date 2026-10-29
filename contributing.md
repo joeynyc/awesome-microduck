@@ -18,7 +18,7 @@ Anything not yet validated on a physical robot should be labeled *sim-only* in i
 
 - Add one entry per pull request, at the end of the most relevant section, or of the most relevant `###` subsection where a section has them.
 - Format: `- [Name](link) - Description.` Use the project's own name and capitalization.
-- Descriptions are one sentence, start with a capital letter, end with a period, and say what the thing does, not why it is great.
+- Descriptions start with a capital letter, end with a period, and say what the thing does, not why it is great. Keep them to about 350 characters: what it is, the key result or caveat, the licence and *sim-only* if it applies. The details belong in the project's own readme.
 - Link to the repository or canonical page, not to a tracker, shortener or referral URL.
 - No trailing whitespace, no hard-wrapping, and check your spelling.
 - Run `npx awesome-lint` locally before submitting; the same check runs on every pull request.
