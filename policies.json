@@ -343,6 +343,24 @@
       "source": "https://github.com/wat-bill/microduck-action-pack",
       "description": "Head-nod and head-shake rhythm dance for the microduckrl simulator, choreographed only through the headpose and bodypose command channels while the policy keeps balance, with a squat-capable standing policy for the body-height channel. Code Apache-2.0, 3D assets under their upstream non-commercial terms, in Chinese. Sim-only.",
       "artifact_mode": "source-only"
+    },
+    {
+      "id": "huggingface:apirrone/microduck-footsteps",
+      "name": "Microduck footsteps",
+      "provider": "huggingface",
+      "repo_id": "apirrone/microduck-footsteps",
+      "source": "https://huggingface.co/apirrone/microduck-footsteps",
+      "description": "Walking on placed footsteps: a footstep-tracking policy, the one tested on the robot, and a FootstepNet planner retrained for the duck's feet that plans one step at a time around an obstacle. The runtime's footsteps branch fetches both when footstep control is switched on; in simulation it lands 5 to 7 mm from its targets. Apache-2.0.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:RemiFabre/microduck-static-grasp",
+      "name": "static-grasp",
+      "provider": "huggingface",
+      "repo_id": "RemiFabre/microduck-static-grasp",
+      "source": "https://huggingface.co/RemiFabre/microduck-static-grasp",
+      "description": "Lower ground pick for the A button that crouches until the open beak is about 1 cm above the floor, keeps the centre of mass over the feet, bites and stands up holding a small object, with a real-robot demo. It needs a matching runtime update on the duck. Apache-2.0.",
+      "artifact_mode": "probe-provider"
     }
   ]
 }
