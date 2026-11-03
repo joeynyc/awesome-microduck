@@ -361,6 +361,24 @@
       "source": "https://huggingface.co/RemiFabre/microduck-static-grasp",
       "description": "Lower ground pick for the A button that crouches until the open beak is about 1 cm above the floor, keeps the centre of mass over the feet, bites and stands up holding a small object, with a real-robot demo. It needs a matching runtime update on the duck. Apache-2.0.",
       "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:witcheer/microduck-walk-flat",
+      "name": "witcheer walk family",
+      "provider": "huggingface",
+      "repo_id": "witcheer/microduck-walk-flat",
+      "source": "https://huggingface.co/witcheer/microduck-walk-flat",
+      "description": "Walks for the walk slot, retrained with ±1° of gear play in every servo, from a flat-ground base to variants for rough ground, slopes, single steps, short stairs, slippery floors, a headwind and walk-and-recover. Each card logs its training and simulation takes, misses included. Apache-2.0. Sim-only.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:witcheer/microduck-standup",
+      "name": "witcheer stand-up, roll and kicks",
+      "provider": "huggingface",
+      "repo_id": "witcheer/microduck-standup",
+      "source": "https://huggingface.co/witcheer/microduck-standup",
+      "description": "A get-up policy retrained with ±1° of servo gear play, a forward roll, a right-foot kick that is blind to the ball by design, so the ball must sit at the toe, and a giant-ball kick for a 300 mm ball bigger than the duck. Apache-2.0. Sim-only.",
+      "artifact_mode": "probe-provider"
     }
   ]
 }
