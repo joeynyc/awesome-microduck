@@ -379,6 +379,15 @@
       "source": "https://huggingface.co/witcheer/microduck-standup",
       "description": "A get-up policy retrained with ±1° of servo gear play, a forward roll, a right-foot kick that is blind to the ball by design, so the ball must sit at the toe, and a giant-ball kick for a 300 mm ball bigger than the duck. Apache-2.0. Sim-only.",
       "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:mindthink/microduck-policies-repro",
+      "name": "Microduck policies reproduction",
+      "provider": "huggingface",
+      "repo_id": "mindthink/microduck-policies-repro",
+      "source": "https://huggingface.co/mindthink/microduck-policies-repro",
+      "description": "Independent reproduction of the official walk and velstand recipes from Pollen's training checkpoints, with a patch that fixes velstand standing still at slow commands, checkpoints, configs, evaluation scripts and comparison tables against the official policy. Not an official release. Apache-2.0. Sim-only.",
+      "artifact_mode": "probe-provider"
     }
   ]
 }
