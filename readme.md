@@ -191,6 +191,7 @@ All from the `pollen-robotics/microduck` repository.
 - [microduck-headcam-imitation](https://github.com/ksy69471/microduck-headcam-imitation) - Walks the duck from its head camera: records the official walk, estimates speed and heading from the video, replays them as commands, then trains a following policy with PPO. Apache-2.0, in Japanese. *Sim-only.*
 - [MicroDuck PPO Navigation](https://github.com/zakiyamaaaaa/microduck-ppo-navigation) - Go 1 m forward, turn and come back to the start, by generating velocity commands from position feedback over the official walk, with a hold-to-arrive check, Colab evaluation and video. Its author says it is unverified on hardware. Apache-2.0, in Japanese. *Sim-only.*
 - [Foot-slip penalty comparison](https://github.com/matcha-7777/microduck-rl-experiments) - Fork of `microduck_rl` comparing walking policies trained with different `foot_slip` weights on forward, turning and backward commands, with the trained models, evaluation code and results. Apache-2.0, in Japanese. *Sim-only.*
+- [Microduck Jenga simulation and training](https://github.com/speccy88/microduck-jenga-sim) - Placement-controlled Jenga training and CEM head taps in MuJoCo: a two-block controller passed 25/30 resets, while three-block PPO remains unsolved. Apache-2.0 code; robot models CC BY-NC-SA 4.0. *Sim-only.*
 
 ## Policies and Skills
 
