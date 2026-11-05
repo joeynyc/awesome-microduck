@@ -154,6 +154,7 @@ All from the `pollen-robotics/microduck` repository.
 - [microduck-twin](https://github.com/digows/microduck-twin) - Completes Pollen's own digital twin rather than replacing it: one command brings up the real daemons against the official simulated body, then adds what that setup leaves out, an audible voice, battery and thermals that follow what the robot is doing, the head microphone as a sensor, a console and the roller variant. No policy is retrained. Apache-2.0. *Sim-only.*
 - [microduck_academy (JdeRobot)](https://github.com/mshooter/microduck_academy) - A MuJoCo simulation server that runs the shipped policies and speaks the robot's own intent API over a Unix socket, so a client written against it should work on a real duck unchanged. It is the first stage of a JdeRobot Robotics Academy exercise, with Gazebo and Academy integration to follow, and vendors the robot model and policies with a notice. Apache-2.0. *Sim-only.*
 - [microduck-ai-world](https://github.com/shaibuafeez/microduck-ai-world) - Embodied-AI playground pairing a robot runtime and RL policies with a detailed MuJoCo world and a vision-language brain that stays off the control loop. *Sim-only.*
+- [Microduck simulation container](https://github.com/delfy22/microduck) - Builds the Rust daemons and runs them against the MuJoCo body in a container from two pinned submodules, with a roadmap towards ROS 2, mapping and navigation. GPL-3.0. *Sim-only.*
 
 ### Training Workbenches
 
@@ -260,6 +261,7 @@ Fixtures and scored tasks for checking a runner or a policy against numbers rath
 - [Microduck skill tree](https://huggingface.co/datasets/witcheer/microduck-skill-tree) - Build log for a ladder of skills trained against a pinned upstream commit on one GPU, one folder per level whether it shipped or not, with the installable policies in their own repositories such as [walk-recover](https://huggingface.co/witcheer/microduck-walk-recover). It reports its misses too, like a recovery policy that failed to get up from its back in 3 of 3 takes. MIT. *Sim-only.*
 - [Hermes Agent runs](https://huggingface.co/datasets/witcheer/microduck-hermes-runs) - One sentence typed to [Hermes Agent](https://github.com/NousResearch/hermes-agent) and the duck carries it out, with every run logged: the sentence, the agent's full transcript, the simulator's ground truth, the robot daemon's own monitor and a replay. Only the body is simulated; `robotd`, its safety layer and its control loop are the real ones. Apache-2.0. *Sim-only.*
 - [Microduck community feedback](https://huggingface.co/datasets/craigm26/microduck-feedback) - Human judgments collected from a planning studio: corrections to how a plain-language router labelled each instruction, and pairwise preferences between two trained walkers doing the same thing. CC0.
+- [MicroDuck x AIProbe](https://github.com/rahilmehta-dev/microduck-aiprobe) - Black-box test of the official ball-kick policy on 1,000 sampled worlds in Pollen's simulator: 90.7 percent completed across 10 seeds, and a planner decides whether each failure was the agent's fault or an impossible task. Per-task data included. MIT. *Sim-only.*
 
 ## Agent Tools and MCP
 
@@ -353,6 +355,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [Desktop Microduck](https://github.com/mia-yanhl/desktop-microduck) - A flock of up to five hand-inked ducks that wander a Mac desktop, kick balls, pick up blocks and quack, plus a [web page](https://mia-yanhl.github.io/desktop-microduck/) to drive one, open it up chapter by chapter and build it step by step. Drawn animation, not the policies. MIT.
 - [DuckPet](https://github.com/a125477365/DuckPet) - Pet brain assembled from swappable plugins, wake word, voiceprint, face and body recognition, following and object detection, over priority arbitration and a behaviour state machine, driving the official simulator's walking, kicking and beak policies to wander, follow, fetch and dance. AGPL-3.0, in Chinese. *Sim-only.*
 - [darkride-automata](https://github.com/Madders/darkride-automata) - Wandering residents for Darkride and Overte virtual worlds that greet visitors, take spoken commands and remember who they have met, moving with motion recorded from the official walking and trick policies in MuJoCo on bodies of their own. Apache-2.0.
+- [Microduck Companion (H5)](https://github.com/butterflylittle/Microduck-Companion) - Emotional companion [web page](https://microduck-ten.vercel.app) in Vue and Three.js where the duck responds to text, touch and praise with moods, beak motion and sounds, plus optional chat through a language model you configure. Apache-2.0, in Chinese.
 
 ### Music and Voice
 
@@ -386,6 +389,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [microduck-tracking](https://github.com/AlexBodner/microduck-tracking) - Multi-object tracking on top of roboflow/trackers that gives the duck a target lock, so it fetches one thrown ball past identical distractors.
 - [Microduck beak lab](https://github.com/qilinxiaoxiang/microduck-beak-lab) - Picks up, holds and drops an object with the beak, comparing a trained jaw policy with its untrained start and a scripted controller in the same scene; broader head and jaw learning is proposed, not done. *Sim-only.*
 - [Duckophila](https://github.com/first-it-consulting/duckophila) - The whole FlyWire fruit-fly connectome, 138,639 neurons, run in closed loop with the duck in MuJoCo, its depth sensing feeding the brain and the brain steering the walk, with a viewer lighting each neuron as it spikes and a [video](https://huggingface.co/spaces/HW01/duckophila). Apache-2.0. *Sim-only.*
+- [Micro Garden](https://github.com/ChristianNHill/micro-garden) - Five ducks, each on its own copy of the FlyWire fruit-fly connectome, smell, see and hear in a persistent garden, get hungry and thirsty, and show what emerges; the brain talks to the body through the robot's command protocol. [Browser version](https://chrisnhill.com/garden/). MIT. *Sim-only.*
 
 ## Hardware and Fabrication
 
@@ -419,6 +423,7 @@ The hardware is not open source (no BOM, CAD or PCB files), but the MJCF and STL
 - [MicroDuck 3D assembly guide](https://ley-wl.github.io/microduck-guide/) - Step-through assembly of fifteen modules with servo IDs, a parts inventory and a print list, built on the reconstruction and drawings listed above and carrying their non-commercial licence with a notice. Its authors say the internal steps are a fitting reference, not verified part by part on a physical build. [Source](https://github.com/Ley-WL/microduck-guide), in Chinese.
 - [MicroDuck BoBoRedesign](https://github.com/AiBoBoMaker/MicroDuck-BoBoRedesign) - Every part redesigned for FDM and SLA printing rather than injection moulding while keeping the original look, with PCB files and a path toward cheaper domestic servos. The printed designs carry the same non-commercial licence as the original models. In Chinese and English.
 - [microduck-jetson-mount](https://github.com/adammong/microduck-jetson-mount) - External mount carrying a Jetson Orin Nano and a 4S battery, as parametric CAD and printable parts with MuJoCo models of the loaded robot. The unchanged official walk carries the load in simulation; nothing is shown on hardware yet. The mount design itself carries no licence. *Sim-only.*
+- [MicroDuck-Replica (deanxizian)](https://github.com/deanxizian/MicroDuck-Replica) - Refined HD-1910 print set based on the original and the kissqy build, with reworked neck, leg and head fits, room for a moving beak, a full assembly model, board references and a parts list. Licensed path by path, with non-commercial upstream terms kept. In Chinese.
 
 ### Boards and Sensors
 
