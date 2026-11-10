@@ -388,6 +388,15 @@
       "source": "https://huggingface.co/mindthink/microduck-policies-repro",
       "description": "Independent reproduction of the official walk and velstand recipes from Pollen's training checkpoints, with a patch that fixes velstand standing still at slow commands, checkpoints, configs, evaluation scripts and comparison tables against the official policy. Not an official release. Apache-2.0. Sim-only.",
       "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "github:thejerrycheng/microduck_replication_feetech",
+      "name": "HD1910 replica policies",
+      "provider": "github",
+      "repo_id": "thejerrycheng/microduck_replication_feetech",
+      "source": "https://github.com/thejerrycheng/microduck_replication_feetech",
+      "description": "Three policies for kissqy-style builds on Feetech HD-1910 servos, trained with Isaac Lab 3.0 and Newton on a BAM model of that servo, keeping the official 61-in, 14-out layout so they load with robotctl policy load. Its readme shows training clips, not hardware runs. MIT. Sim-only.",
+      "artifact_mode": "source-only"
     }
   ]
 }
