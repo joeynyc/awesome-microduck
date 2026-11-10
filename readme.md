@@ -110,6 +110,7 @@ All from the `pollen-robotics/microduck` repository.
 - [Pair a gamepad](https://github.com/pollen-robotics/microduck/blob/main/docs/robot/pair-a-gamepad.md) - Bonding a controller to the robot.
 - [Dev board setup](https://github.com/pollen-robotics/microduck/blob/main/docs/robot/install-dev.md) - Setting up a development board and pushing branches.
 - [Contributing guide](https://github.com/pollen-robotics/microduck/blob/main/CONTRIBUTING.md) - Upstream contribution standards.
+- [Microduck with Isaac Lab 3.0](https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real) - Tutorial from NVIDIA engineers on the Hugging Face blog: train the walk with Isaac Lab and Newton, test and export it as ONNX, then deploy it, share it on the Hub or enter it in the Arena, with pointers to more advanced tasks.
 
 ## Simulation and Training
 
@@ -155,6 +156,8 @@ All from the `pollen-robotics/microduck` repository.
 - [microduck_academy (JdeRobot)](https://github.com/mshooter/microduck_academy) - A MuJoCo simulation server that runs the shipped policies and speaks the robot's own intent API over a Unix socket, so a client written against it should work on a real duck unchanged. It is the first stage of a JdeRobot Robotics Academy exercise, with Gazebo and Academy integration to follow, and vendors the robot model and policies with a notice. Apache-2.0. *Sim-only.*
 - [microduck-ai-world](https://github.com/shaibuafeez/microduck-ai-world) - Embodied-AI playground pairing a robot runtime and RL policies with a detailed MuJoCo world and a vision-language brain that stays off the control loop. *Sim-only.*
 - [Microduck simulation container](https://github.com/delfy22/microduck) - Builds the Rust daemons and runs them against the MuJoCo body in a container from two pinned submodules, with a roadmap towards ROS 2, mapping and navigation. GPL-3.0. *Sim-only.*
+- [Microduck virtual lab](https://github.com/gnana70/microduck-virtual-lab) - Tests the official duck and the community replica in MuJoCo with BAM servo models and the `velstand` policy before you buy parts, with a result file per test, as companion code to a build video. Apache-2.0. *Sim-only.*
+- [Creature Lab](https://github.com/oney-erge/Creature-Lab) - Local browser workbench that runs published robots, the duck among them, with their real policies: shove one, make the floor slippery, and get an evidence-backed explanation of each fall, with every experiment saved for replay. Apache-2.0. *Sim-only.*
 
 ### Training Workbenches
 
@@ -193,6 +196,7 @@ All from the `pollen-robotics/microduck` repository.
 - [MicroDuck PPO Navigation](https://github.com/zakiyamaaaaa/microduck-ppo-navigation) - Go 1 m forward, turn and come back to the start, by generating velocity commands from position feedback over the official walk, with a hold-to-arrive check, Colab evaluation and video. Its author says it is unverified on hardware. Apache-2.0, in Japanese. *Sim-only.*
 - [Foot-slip penalty comparison](https://github.com/matcha-7777/microduck-rl-experiments) - Fork of `microduck_rl` comparing walking policies trained with different `foot_slip` weights on forward, turning and backward commands, with the trained models, evaluation code and results. Apache-2.0, in Japanese. *Sim-only.*
 - [Microduck Jenga simulation and training](https://github.com/speccy88/microduck-jenga-sim) - Placement-controlled Jenga training and CEM head taps in MuJoCo: a two-block controller passed 25/30 resets, while three-block PPO remains unsolved. Apache-2.0 code; robot models CC BY-NC-SA 4.0. *Sim-only.*
+- [MicroDuck Indoor Object Search RL](https://github.com/Bravo-Robots/microduck-indoor-object-search-rl) - A PPO search supervisor trained to find objects in a furnished room, then run on the free-floating full-body duck in MuJoCo, with the room, trained models and assets on the [Hub](https://huggingface.co/BravoRobots/microduck-indoor-object-search-rl). Apache-2.0. *Sim-only.*
 
 ## Policies and Skills
 
@@ -249,6 +253,7 @@ with the structured community form.
 - [witcheer walk family](https://huggingface.co/witcheer/microduck-walk-flat) - Walks for the `walk` slot, retrained with ±1° of gear play in every servo, from a flat-ground base to variants for [rough ground](https://huggingface.co/witcheer/microduck-walk-rough), [slopes](https://huggingface.co/witcheer/microduck-walk-slope), [single steps](https://huggingface.co/witcheer/microduck-walk-step), [short stairs](https://huggingface.co/witcheer/microduck-walk-stairs), [slippery floors](https://huggingface.co/witcheer/microduck-walk-slip), a [headwind](https://huggingface.co/witcheer/microduck-walk-gale) and [walk-and-recover](https://huggingface.co/witcheer/microduck-walk-recover). Each card logs its training and simulation takes, misses included. Apache-2.0. *Sim-only.*
 - [witcheer stand-up, roll and kicks](https://huggingface.co/witcheer/microduck-standup) - A get-up policy retrained with ±1° of servo gear play, a [forward roll](https://huggingface.co/witcheer/microduck-roulade), a [right-foot kick](https://huggingface.co/witcheer/microduck-kick-right) that is blind to the ball by design, so the ball must sit at the toe, and a [giant-ball kick](https://huggingface.co/witcheer/microduck-kick-right-giant-ball) for a 300 mm ball bigger than the duck. Apache-2.0. *Sim-only.*
 - [Microduck policies reproduction](https://huggingface.co/mindthink/microduck-policies-repro) - Independent reproduction of the official walk and `velstand` recipes from Pollen's training checkpoints, with a patch that fixes `velstand` standing still at slow commands, checkpoints, configs, evaluation scripts and comparison tables against the official policy. Not an official release. Apache-2.0. *Sim-only.*
+- [HD1910 replica policies](https://github.com/thejerrycheng/microduck_replication_feetech) - Three policies for kissqy-style builds on Feetech HD-1910 servos, trained with Isaac Lab 3.0 and Newton on a BAM model of that servo, keeping the official 61-in, 14-out layout so they load with `robotctl policy load`. Its readme shows training clips, not hardware runs. MIT. *Sim-only.*
 
 ## Datasets and Benchmarks
 
@@ -303,11 +308,14 @@ Ways for LLM agents and scripts to drive a duck.
 - [Agentic Microduck](https://github.com/Aachal-Sharma/agentic-microduck) - Type a goal like "find the red ball" and a vision-language model reports where the target is in the head-camera image, while a simple controller, not the model, picks the moves for Pollen's walking policy. Works with vision models on NVIDIA's endpoint, with a dashboard. Apache-2.0. *Sim-only.*
 - [MicroDuck on RK3588: toy retrieval](https://github.com/Baro7ue/microduck-rk3588-toy-retrieval) - Told which toy to fetch, the duck searches, walks over, picks it up with its beak and drops it in a tray, with `robotd`, the policies and an INT8 YOLO detector on an RK3588 board's NPU and the body simulated in MuJoCo over Ethernet. 52 of 60 formal runs succeeded. Apache-2.0. *Sim-only.*
 - [duckmind](https://github.com/joseyarashio/duckmind) - A mind for the duck: identity, moods, memories, the people it knows, goals and what it learns, with a browser simulator and documentation in seven languages. Unofficial. Apache-2.0. *Sim-only.*
+- [MicroDuck Zero-Shot Robotics Harness](https://github.com/Prasoon1207/microduck-harness) - About 140 lines that let general-purpose LLMs control the joints directly in a 50 Hz MuJoCo simulation, with no RL policies or agent framework underneath, only physical rules and structured thought-and-action output. MIT. *Sim-only.*
+- [Knowlin](https://github.com/knowlin-ai/knowlin) - Self-learning companion that embodies small robots, the duck, Open Duck Mini and Reachy Mini, simulated on your PC, fetching Pollen's models from their source instead of bundling them. Free hobby project, in German and English. Apache-2.0. *Sim-only.*
 
 ## Community Hubs and Registries
 
 - [MicroduckHub](https://microduckhub.com) - Community policy browser listing the shipped behaviors and Hub retrains, with one-click deploy planned for when upstream's model channel ships.
 - [uDuck Registry](https://uduck-registry.pages.dev) - Independent catalog of community policy descriptors with contract specs and verification status.
+- [DuckSpace](https://duckspace.org) - Catalog of community ONNX skills for the duck and similar bipeds on several servo types, with a 3D MuJoCo apartment to try them in the browser. [Source](https://github.com/aminadav-ai/duckspace), Apache-2.0.
 
 ## Apps and Ports
 
@@ -338,6 +346,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [RoboMasters MicroDuck Simulator](https://github.com/dnorton94/robomasters-microduck) - Educational extension of the official browser simulator that keeps its policies and controls and adds autonomous roam and chase-ball modes, placeable obstacles, interactive sensors and a head-camera view. Apache-2.0. *Sim-only.*
 - [duck3d](https://github.com/guang384/duck3d) - Native desktop console, hardware-rendered with wgpu, with MuJoCo physics on a 50 Hz timer, inference through the same ONNX Runtime version the robot's daemon uses, and a port of the daemon's control scheduling. Apache-2.0, in Chinese. *Sim-only.*
 - [MicroDuck-LKG](https://github.com/Jup33Q/microduck-lkg) - Native macOS viewer in Swift and Metal that renders the simulated duck for a Looking Glass light-field display, pairing the Laya vision model listed above for find-and-kick decisions with a PPO walking policy, and starting local training from the app's panel. Policies and model weights are downloaded from the Hub rather than bundled. No licence is stated for its own code. In Chinese. *Sim-only.*
+- [CogniPilot Microduck demo](https://cognipilot.github.io/microduck_web) - Static browser demo built on Modelica, with vendor files, licence notices and model and policy provenance shipped alongside, and no service or API key. [Source](https://github.com/CogniPilot/microduck_web), Apache-2.0. *Sim-only.*
 
 ### Mobile and XR
 
@@ -364,6 +373,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [Bohemian Rhapsody by the Microducks](https://huggingface.co/spaces/FormaLau/microduck-bohemian-rhapsody) - Four ducks perform the operatic section in the browser simulator. *Sim-only.*
 - [Talk to Microduck](https://huggingface.co/spaces/jackboyla/microduck-voice) - Voice commands for the duck in the official simulator, with the speech models and the physics both running in your browser: no API key, no server, no robot. Needs a WebGPU browser and about 5 GB of GPU memory, and downloads roughly 2.5 GB of models on first use. *Sim-only.*
 - [microhear](https://github.com/Archdiner/microhear) - How the duck hears: one Rust core for loudness, onsets and pitch measured against the room and the speaker, running in the browser over WebAssembly now and meant for the duck's microphone worker later. MIT.
+- [mooduck_quacklib](https://github.com/paudar/mooduck_quacklib) - Small dependency-free Rust crate for expressive synthetic duck sounds by mood and intensity, with a CLI for listening and a PCM interface for use on a robot. Apache-2.0.
 
 ### Control Panels and Builders
 
@@ -409,6 +419,9 @@ The hardware is not open source (no BOM, CAD or PCB files), but the MJCF and STL
 - [Dukki](https://github.com/lachlanhurst/dukki) - Rework of the biped around Unitree J288 servos, about three times faster than the XL330 at similar torque, with a Radxa CM4 brain. It holds KiCad boards, STM32 servo-bridge firmware and single-servo bench tests, plus a fix for a head-IMU temperature bug its author says affects Pollen's robots too. Flagged as nowhere near complete. MIT.
 - [DuckBuddy](https://github.com/Animan-AI/DuckBuddy) - Independent build on Feetech HL-2915 servos and an Orange Pi with policies retrained for those servos, offline speech recognition, two-microphone sound direction, face tracking and a mood-and-needs layer, all running on the robot. A hardware video shows it carrying out a spoken chain of moves; vision and route-following are still being tested on hardware. Apache-2.0, in Chinese.
 - [Microduck-S288](https://github.com/zj281136/microduck-s288) - Replica on fifteen off-the-shelf S288 motors and a Raspberry Pi Zero 2 W with no custom PCB, with build, calibration, training and deployment guides and a pretrained ONNX. Its author says wiring details, zero-pose references and walking videos are still being added. Apache-2.0, in Chinese.
+- [RDK X5 Duck](https://github.com/CanNyCat17/rdk-x5-microduck) - Full build on an RDK X5 covering parts, printing and assembly, onboard control, IMU setup and MuJoCo simulation, with a video of a short onboard walk and a validated single-battery power setup. Its author says walking stability is still being tuned. Apache-2.0, in Chinese.
+- [kryakva](https://github.com/AleksWolf/kryakva) - Custom duck on fifteen HD-1910 servos with parts drawn from scratch, its own PCB, a Radxa Zero 3W, camera, rangefinder, microphone and speaker, and policies trained for these servos; it stands up, walks and turns from a DualSense pad. Code Apache-2.0, 3D models CC BY-NC-SA 4.0, in English and Russian.
+- [microduck-software (HD-1910)](https://github.com/harrysungit/microduck-software) - The software side of the fanhao375 HD-1910 replica: [extra training tasks](https://github.com/harrysungit/microduck-rl) for those servos and ROCm GPUs, a runtime fork with fixes, IMU compatibility and the Studio web console. Apache-2.0, in English and Chinese.
 
 ### Reconstructions, CAD and Printable Parts
 
@@ -432,6 +445,7 @@ The hardware is not open source (no BOM, CAD or PCB files), but the MJCF and STL
 - [IMU replacement reference](https://github.com/Juxi-Technology/imu-displace-microduck) - Patch and bilingual guide for moving HD-1910 builds to an I²C ICM-42670-P trunk IMU. The data path is verified on hardware; wiring it into `robotd` is not done yet, and the guides say so. Apache-2.0.
 - [MicroDuck observer](https://github.com/Ley-WL/microduck-observer) - Read-only web dashboard for a physical build, showing a BNO085 IMU's attitude on a 3D duck beside all fifteen HD-1910 servos, with shadow ONNX inference to check a policy against live data. It never sends a motion command, and runs against a simulated backend or on a Radxa ZERO 3W. Apache-2.0, in Chinese.
 - [microduck-eyes](https://github.com/jadberro/microduck-eyes) - Cartoon eyes for two round 1.28-inch GC9A01 screens driven from a Radxa Zero, with a behaviour engine and a desktop simulator at true size to design them before the hardware is fitted. MIT.
+- [Microduck HUB board](https://github.com/jaggerzhong/microduck-hub-board) - Passive four-port servo-bus hub for HD-1910 builds, 23 × 34 mm with holes matching the hip servo housing and room for a bulk capacitor, with Gerbers, KiCad files and ordering notes. CERN-OHL-S-2.0, in Chinese and English.
 
 ### Calibration and Assembly Tools
 
