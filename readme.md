@@ -197,6 +197,8 @@ All from the `pollen-robotics/microduck` repository.
 - [Foot-slip penalty comparison](https://github.com/matcha-7777/microduck-rl-experiments) - Fork of `microduck_rl` comparing walking policies trained with different `foot_slip` weights on forward, turning and backward commands, with the trained models, evaluation code and results. Apache-2.0, in Japanese. *Sim-only.*
 - [Microduck Jenga simulation and training](https://github.com/speccy88/microduck-jenga-sim) - Placement-controlled Jenga training and CEM head taps in MuJoCo: a two-block controller passed 25/30 resets, while three-block PPO remains unsolved. Apache-2.0 code; robot models CC BY-NC-SA 4.0. *Sim-only.*
 - [MicroDuck Indoor Object Search RL](https://github.com/Bravo-Robots/microduck-indoor-object-search-rl) - A PPO search supervisor trained to find objects in a furnished room, then run on the free-floating full-body duck in MuJoCo, with the room, trained models and assets on the [Hub](https://huggingface.co/BravoRobots/microduck-indoor-object-search-rl). Apache-2.0. *Sim-only.*
+- [mujoco-puzzle-gym](https://github.com/Song-Seng-Hun/mujoco-puzzle-gym) - A coding agent builds stateful puzzle rooms with switches, doors and goals as YAML programs in MuJoCo, and the duck, its first robot, learns to solve them with RL on top of the official `velstand` walk. Apache-2.0, in Korean. *Sim-only.*
+- [MicroDuck_1910_RL](https://github.com/howe12/MicroDuck_1910_RL) - Simulation training for the duck on Feetech HD-1910 actuators with mjlab and rsl_rl, keeping the upstream 61-in, 14-out contract and exporting ONNX with the normaliser baked in. Apache-2.0, in Chinese. *Sim-only.*
 
 ## Policies and Skills
 
@@ -310,6 +312,10 @@ Ways for LLM agents and scripts to drive a duck.
 - [duckmind](https://github.com/joseyarashio/duckmind) - A mind for the duck: identity, moods, memories, the people it knows, goals and what it learns, with a browser simulator and documentation in seven languages. Unofficial. Apache-2.0. *Sim-only.*
 - [MicroDuck Zero-Shot Robotics Harness](https://github.com/Prasoon1207/microduck-harness) - About 140 lines that let general-purpose LLMs control the joints directly in a 50 Hz MuJoCo simulation, with no RL policies or agent framework underneath, only physical rules and structured thought-and-action output. MIT. *Sim-only.*
 - [Knowlin](https://github.com/knowlin-ai/knowlin) - Self-learning companion that embodies small robots, the duck, Open Duck Mini and Reachy Mini, simulated on your PC, fetching Pollen's models from their source instead of bundling them. Free hobby project, in German and English. Apache-2.0. *Sim-only.*
+- [hermes-microduck](https://github.com/arcabotai/hermes-microduck) - Hermes Agent plugin with ten duck tools, from looking through the head camera to walking, turning and sitting, running the real policies in MuJoCo behind a safety interlock the model can't argue past. Now also part of [hermes-robots](https://github.com/arcabotai/hermes-robots), one plugin for the duck, ROS 2 and a mock backend. MIT. *Sim-only.*
+- [microduck wander](https://huggingface.co/spaces/craigm26/microduck-wander) - Space where the duck walks about on its own, keeps clear of obstacles and greets whoever comes close, against a practice duck in a simulated room or your own duck over Pollen's rendezvous. 16 three-minute practice sessions had no falls; not yet run on a physical duck. Apache-2.0. *Sim-only.*
+- [ANKA](https://github.com/crimzzon92/ANKA-Microduck-AI-Brain) - Experimental LLM-driven mind where the language model decides what the duck thinks, feels, says and does, keeping autobiographical memories and reflecting on them at night, in the MuJoCo simulator for now. Apache-2.0. *Sim-only.*
+- [microduck-mijia-control](https://github.com/GVNman/microduck-mijia-control) - Chinese voice control of Mi Home devices from the duck's Radxa board, so it can turn on lights and close curtains, plus a proxy setup to keep it online. MIT, in Chinese and English.
 
 ## Community Hubs and Registries
 
@@ -365,6 +371,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [DuckPet](https://github.com/a125477365/DuckPet) - Pet brain assembled from swappable plugins, wake word, voiceprint, face and body recognition, following and object detection, over priority arbitration and a behaviour state machine, driving the official simulator's walking, kicking and beak policies to wander, follow, fetch and dance. AGPL-3.0, in Chinese. *Sim-only.*
 - [darkride-automata](https://github.com/Madders/darkride-automata) - Wandering residents for Darkride and Overte virtual worlds that greet visitors, take spoken commands and remember who they have met, moving with motion recorded from the official walking and trick policies in MuJoCo on bodies of their own. Apache-2.0.
 - [Microduck Companion (H5)](https://github.com/butterflylittle/Microduck-Companion) - Emotional companion [web page](https://microduck-ten.vercel.app) in Vue and Three.js where the duck responds to text, touch and praise with moods, beak motion and sounds, plus optional chat through a language model you configure. Apache-2.0, in Chinese.
+- [Pollen Pet](https://github.com/mattt/PollenPet) - macOS app that puts a talking Microduck or Reachy Mini on your desktop for short conversations with synchronised speech, text and motion, plus [Pollen Codex Pets](https://github.com/mattt/pollen-codex-pets), pixel-art pets that keep you company while Codex works. Code Apache-2.0, duck model non-commercial.
 
 ### Music and Voice
 
