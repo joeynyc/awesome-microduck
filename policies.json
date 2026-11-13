@@ -397,6 +397,15 @@
       "source": "https://github.com/thejerrycheng/microduck_replication_feetech",
       "description": "Three policies for kissqy-style builds on Feetech HD-1910 servos, trained with Isaac Lab 3.0 and Newton on a BAM model of that servo, keeping the official 61-in, 14-out layout so they load with robotctl policy load. Its readme shows training clips, not hardware runs. MIT. Sim-only.",
       "artifact_mode": "source-only"
+    },
+    {
+      "id": "huggingface:duckyduck369/microduck-hd1910-velstand-djbob",
+      "name": "HD-1910 per-robot policies",
+      "provider": "huggingface",
+      "repo_id": "duckyduck369/microduck-hd1910-velstand-djbob",
+      "source": "https://huggingface.co/duckyduck369/microduck-hd1910-velstand-djbob",
+      "description": "Walk, walk-and-get-up, flamingo and roulade policies trained for individual HD-1910 replicas, each card giving the robot's tuned HOME pose, gains, supply voltage, a hashed simulation model of that build and a 256-robot evaluation table. Apache-2.0. Sim-only.",
+      "artifact_mode": "probe-provider"
     }
   ]
 }
