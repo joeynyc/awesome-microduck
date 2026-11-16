@@ -134,6 +134,7 @@ All from the `pollen-robotics/microduck` repository.
 - [microduck-miniverse](https://github.com/DollhouseRobotics/microduck-miniverse) - Every published ONNX policy repackaged as a deterministic Miniverse simulation bundle.
 - [Wicroduck](https://github.com/ngxson/wicroduck) - Attempt to put the whole loop behind a URL: MuJoCo compiled to WebAssembly steps the real MJCF in the browser with no Python and no backend. Simulation works today; in-browser training is the goal, not yet the state. *Sim-only.*
 - [microduck_ros2](https://github.com/Arjunros/microduck_ros2) - ROS 2 simulation and policy runtime: MuJoCo with the BAM XL330 actuator model, driven by the official ONNX policies over standard topics, so the duck takes `/cmd_vel`, shows in RViz and records to rosbag. Apache-2.0. *Sim-only.*
+- [Microduck Soccer on AMD GPUs](https://github.com/wangxunx/microduck-soccer-demo) - Walking and ball-kicking policies trained in Genesis on one AMD Radeon GPU under ROCm, with sim-to-sim checks against MuJoCo, played in the [MicroDuck Robot Soccer](https://github.com/wander521/microduck-robot-soccer) game, where the kick scored 68 goals to the original's 61 with no falls. Apache-2.0. *Sim-only.*
 
 ### Training Setups for Specific Machines
 
@@ -199,6 +200,7 @@ All from the `pollen-robotics/microduck` repository.
 - [MicroDuck Indoor Object Search RL](https://github.com/Bravo-Robots/microduck-indoor-object-search-rl) - A PPO search supervisor trained to find objects in a furnished room, then run on the free-floating full-body duck in MuJoCo, with the room, trained models and assets on the [Hub](https://huggingface.co/BravoRobots/microduck-indoor-object-search-rl). Apache-2.0. *Sim-only.*
 - [mujoco-puzzle-gym](https://github.com/Song-Seng-Hun/mujoco-puzzle-gym) - A coding agent builds stateful puzzle rooms with switches, doors and goals as YAML programs in MuJoCo, and the duck, its first robot, learns to solve them with RL on top of the official `velstand` walk. Apache-2.0, in Korean. *Sim-only.*
 - [MicroDuck_1910_RL](https://github.com/howe12/MicroDuck_1910_RL) - Simulation training for the duck on Feetech HD-1910 actuators with mjlab and rsl_rl, keeping the upstream 61-in, 14-out contract and exporting ONNX with the normaliser baked in. Apache-2.0, in Chinese. *Sim-only.*
+- [Microduck Ball Balance](https://github.com/divyamjainx/microduck-ball) - Two-stage Isaac Lab training to stand on a fixed ball, then balance on a freely rolling one, with checkpoints, numerical evaluations and a streamed Isaac Sim viewer on NVIDIA Brev. Isaac Lab BSD-3-Clause headers. *Sim-only.*
 
 ## Policies and Skills
 
