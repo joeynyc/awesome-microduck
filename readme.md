@@ -319,6 +319,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [microduck wander](https://huggingface.co/spaces/craigm26/microduck-wander) - Space where the duck walks about on its own, keeps clear of obstacles and greets whoever comes close, against a practice duck in a simulated room or your own duck over Pollen's rendezvous. 16 three-minute practice sessions had no falls; not yet run on a physical duck. Apache-2.0. *Sim-only.*
 - [ANKA](https://github.com/crimzzon92/ANKA-Microduck-AI-Brain) - Experimental LLM-driven mind where the language model decides what the duck thinks, feels, says and does, keeping autobiographical memories and reflecting on them at night, in the MuJoCo simulator for now. Apache-2.0. *Sim-only.*
 - [microduck-mijia-control](https://github.com/GVNman/microduck-mijia-control) - Chinese voice control of Mi Home devices from the duck's Radxa board, so it can turn on lights and close curtains, plus a proxy setup to keep it online. MIT, in Chinese and English.
+- [MicroDuck Dialogue](https://github.com/Ngalalalekhaaa/microduck-dialogue) - Chinese dialogue and task planning with a fine-tuned Qwen3.5-2B planner driving the existing walking, posture and kicking controllers in MuJoCo, with a chat window. Plans were fully correct in 268 of 310 development cases, not a blind test, and 11 of 11 finite goals passed in simulation. Apache-2.0. *Sim-only.*
 
 ## Community Hubs and Registries
 
