@@ -135,6 +135,7 @@ All from the `pollen-robotics/microduck` repository.
 - [Wicroduck](https://github.com/ngxson/wicroduck) - Attempt to put the whole loop behind a URL: MuJoCo compiled to WebAssembly steps the real MJCF in the browser with no Python and no backend. Simulation works today; in-browser training is the goal, not yet the state. *Sim-only.*
 - [microduck_ros2](https://github.com/Arjunros/microduck_ros2) - ROS 2 simulation and policy runtime: MuJoCo with the BAM XL330 actuator model, driven by the official ONNX policies over standard topics, so the duck takes `/cmd_vel`, shows in RViz and records to rosbag. Apache-2.0. *Sim-only.*
 - [Microduck Soccer on AMD GPUs](https://github.com/wangxunx/microduck-soccer-demo) - Walking and ball-kicking policies trained in Genesis on one AMD Radeon GPU under ROCm, with sim-to-sim checks against MuJoCo, played in the [MicroDuck Robot Soccer](https://github.com/wander521/microduck-robot-soccer) game, where the kick scored 68 goals to the original's 61 with no falls. Apache-2.0. *Sim-only.*
+- [microduck_ws (Gazebo)](https://github.com/thirun30-dev/microduck) - ROS 2 Jazzy and Gazebo Harmonic simulation driven by the official `velstand` and walking policies from the Hub, shown in RViz, with a URDF converted from the MJCF. Its known limits are listed: turning in place barely works and slow commands stand still. Apache-2.0. *Sim-only.*
 
 ### Training Setups for Specific Machines
 
@@ -149,6 +150,7 @@ All from the `pollen-robotics/microduck` repository.
 - [microduck-docker (srayuth089)](https://github.com/srayuth089/microduck-docker) - The simulator, MuJoCo physics and the pretrained policies in a single published container, so trying the robot is one `docker run` rather than an environment. Apache-2.0, built in CI and on Docker Hub.
 - [Microduck RL one-click toolkit](https://github.com/OneRobotAI/microduck) - Two scripts that take a bare Linux box from no environment to a usable gait and an exported ONNX with its validation, timed at about four hours on an RTX 5060 Ti. In Chinese. *Sim-only.*
 - [microduck-sim-playground](https://github.com/x10zyn/microduck-sim-playground) - Lightweight educational workspace: bootstrap script, CPU MuJoCo viewer with keyboard poses, upstream pinned as submodules.
+- [microduck-rl-windows](https://github.com/youttiao/microduck-rl-windows) - Runs the official training stack natively on Windows with RTX 50-series GPUs, with a cu128 patch, a one-command bootstrap, a list of pitfalls and a guide to retargeting human motion that flags which motion libraries can't be shared. MIT, in Chinese. *Sim-only.*
 
 ### Digital Twins and Benches
 
@@ -366,6 +368,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [Microduck WebXR](https://github.com/ApurvK032/microduck-webxr) - Physics-driven Microduck for Meta Quest and ordinary browsers, with controller walking, learned skills, room placement and an autonomous wander mode.
 - [Microduck AR](https://huggingface.co/spaces/multimodalart/microduck-ar) - WebXR adaptation of the official sandbox with AR placement and ground-pick interaction.
 - [specs-microduck](https://github.com/kgediya/specs-microduck) - Hand-gesture teleoperation of the simulated duck from Snap Spectacles, with in-lens telemetry.
+- [Microduck Studio iOS shell](https://github.com/viniedodo/microduck-replica-ios) - Unofficial, unsigned WKWebView app that opens the Microduck Studio console running on a replica duck from an iPhone or iPad; all control stays in the duck's Studio service. MIT, in Chinese.
 
 ### Desktop Pets and Companions
 
