@@ -327,7 +327,7 @@ Ways for LLM agents and scripts to drive a duck.
 
 - [MicroduckHub](https://microduckhub.com) - Community policy browser listing the shipped behaviors and Hub retrains, with one-click deploy planned for when upstream's model channel ships.
 - [uDuck Registry](https://uduck-registry.pages.dev) - Independent catalog of community policy descriptors with contract specs and verification status.
-- [DuckSpace](https://duckspace.org) - Catalog of community ONNX skills for the duck and similar bipeds on several servo types, with a 3D MuJoCo apartment to try them in the browser. [Source](https://github.com/aminadav-ai/duckspace), Apache-2.0.
+- [DuckSpace](https://duckspace.org) - Catalog of community ONNX skills across XL330, Feetech and XGO-Duck servo profiles, with a 50 Hz 3D MuJoCo apartment that loads any Hugging Face MLP or recurrent LSTM policy via `?hf=org/repo` (including 6-DOF basketball balance, rugs and mouse shoves). [Source](https://github.com/aminadav-ai/duckspace), Apache-2.0. *Sim-only.*
 
 ## Apps and Ports
 
