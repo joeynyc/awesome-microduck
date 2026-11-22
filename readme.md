@@ -151,6 +151,7 @@ All from the `pollen-robotics/microduck` repository.
 - [Microduck RL one-click toolkit](https://github.com/OneRobotAI/microduck) - Two scripts that take a bare Linux box from no environment to a usable gait and an exported ONNX with its validation, timed at about four hours on an RTX 5060 Ti. In Chinese. *Sim-only.*
 - [microduck-sim-playground](https://github.com/x10zyn/microduck-sim-playground) - Lightweight educational workspace: bootstrap script, CPU MuJoCo viewer with keyboard poses, upstream pinned as submodules.
 - [microduck-rl-windows](https://github.com/youttiao/microduck-rl-windows) - Runs the official training stack natively on Windows with RTX 50-series GPUs, with a cu128 patch, a one-command bootstrap, a list of pitfalls and a guide to retargeting human motion that flags which motion libraries can't be shared. MIT, in Chinese. *Sim-only.*
+- [microduck-lab (igorred8)](https://github.com/igorred8/microduck-lab) - Separate Apple Silicon lab that trains on a Mac with no CUDA GPU and shows every policy live in the browser, then puts ducks in a room with simulated senses to follow a person, tidy a playroom or play 3v3 soccer, with four more robot bodies on the same harness. Apache-2.0. *Sim-only.*
 
 ### Digital Twins and Benches
 
@@ -261,6 +262,8 @@ with the structured community form.
 - [Microduck policies reproduction](https://huggingface.co/mindthink/microduck-policies-repro) - Independent reproduction of the official walk and `velstand` recipes from Pollen's training checkpoints, with a patch that fixes `velstand` standing still at slow commands, checkpoints, configs, evaluation scripts and comparison tables against the official policy. Not an official release. Apache-2.0. *Sim-only.*
 - [HD1910 replica policies](https://github.com/thejerrycheng/microduck_replication_feetech) - Three policies for kissqy-style builds on Feetech HD-1910 servos, trained with Isaac Lab 3.0 and Newton on a BAM model of that servo, keeping the official 61-in, 14-out layout so they load with `robotctl policy load`. Its readme shows training clips, not hardware runs. MIT. *Sim-only.*
 - [HD-1910 per-robot policies](https://huggingface.co/duckyduck369/microduck-hd1910-velstand-djbob) - Walk, walk-and-get-up, [flamingo](https://huggingface.co/duckyduck369/microduck-hd1910-flamingo-djbob) and [roulade](https://huggingface.co/duckyduck369/microduck-hd1910-roulade-Yanke01) policies trained for individual HD-1910 replicas, each card giving the robot's tuned HOME pose, gains, supply voltage, a hashed simulation model of that build and a 256-robot evaluation table. Apache-2.0. *Sim-only.*
+- [microduck-backwards-scoot](https://huggingface.co/HannesVonEssen/microduck-backwards-scoot) - A seated duck scoots backward on its seat to dock into the [MicroDock](https://github.com/Vottivott/microduck-playground/tree/main/hardware/microdock-v3) charging dock. Trained in MuJoCo; its preview video shows it on a real duck, tested by Antoine Pirrone of Pollen. Apache-2.0.
+- [Microduck Trick Pack](https://huggingface.co/GinDuck/microduck-trick-pack) - Five tricks in one policy, each started by a short command pulse, with the duck standing up again after every one: plumps with legs up, a forward roll, left and right kicks and a deep bow. Apache-2.0. *Sim-only.*
 
 ## Datasets and Benchmarks
 
@@ -344,6 +347,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [MicroDuck Mommy Flock](https://huggingface.co/spaces/oliveirabruno01/microduck-mommy-flock) - Lead a mother duck while two ducklings learn to follow her, in a fork of the official sandbox that its author marks experimental, with simulated perception. *Sim-only.*
 - [MicroDuck for Garry's Mod](https://github.com/DJ210517/microduck-gmod) - Experimental Windows port that brings the walking and roller ducks, their original public ONNX policies and the tricks into Garry's Mod, with a remote and chase camera. The Workshop item is private while testing, so it ships as a release download. Apache-2.0.
 - [omo-microduck](https://github.com/omoresearch/omo-microduck) - Minecraft mod where the duck, with its real CAD, servo model and walking policy simulated live in MuJoCo, walks on your blocks as a companion, with reels cut from live play. MIT.
+- [DuckFightClub Sumo](https://github.com/picsoung/duckfight-sumo) - Participant kit for [DuckFightClub](https://duckfight.club/participate), simulator sumo between two policies in a shared MuJoCo arena, run live at the PAIR(ED) Summit in Paris on 1 December 2026, with the match UI, official walkers, a CPU referee and an example autonomous fighter. Apache-2.0. *Sim-only.*
 
 ### Browser and Desktop Simulators
 
@@ -369,6 +373,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [Microduck AR](https://huggingface.co/spaces/multimodalart/microduck-ar) - WebXR adaptation of the official sandbox with AR placement and ground-pick interaction.
 - [specs-microduck](https://github.com/kgediya/specs-microduck) - Hand-gesture teleoperation of the simulated duck from Snap Spectacles, with in-lens telemetry.
 - [Microduck Studio iOS shell](https://github.com/viniedodo/microduck-replica-ios) - Unofficial, unsigned WKWebView app that opens the Microduck Studio console running on a replica duck from an iPhone or iPad; all control stays in the duck's Studio service. MIT, in Chinese.
+- [DuckBuddy App](https://github.com/jackwuwei/DuckBuddy) - Unofficial native phone app, SwiftUI on iOS and Compose on Android over a shared Rust core, to add a duck, drive it, run moves, switch policies, check status and change networks, on phones, tablets and foldables. Apache-2.0, in Chinese and English.
 
 ### Desktop Pets and Companions
 
@@ -467,6 +472,7 @@ The hardware is not open source (no BOM, CAD or PCB files), but the MJCF and STL
 - [Microduck calibration guide](https://github.com/janauto/microduck-calibration-guide) - Read-only joint-direction check for HD-1910 builds: it animates the expected motion, you move the joint by hand, and it shows the encoder change, without ever commanding a servo. MIT, in Chinese.
 - [MicroDuck Maker](https://github.com/lxm/microduck-maker) - Maintenance toolkit for HD-1910 builds: per-joint zero calibration with a 3D reference, backup and restore, and a servo numbering and assembly check you can [view online](https://lxm.github.io/microduck-servo-guide/). Original code MIT; the bundled kissqy reference code and CAD-derived models keep their non-commercial terms. In Chinese.
 - [microduck-tools](https://github.com/jackwuwei/microduck-tools) - Servo zero-calibration workbench that runs on a computer and reaches the duck's servo bus over SSH or a direct USB serial link, with a printable calibration tray, the control-program patches it needs and photos of it in use. Apache-2.0, in Chinese and English.
+- [HD-1910-C001 servo bench toolkit](https://github.com/IndigoC/microduck-feetech-c001-servo-toolkit) - Linux toolkit for preparing one Feetech HD-1910-C001 servo at a time before assembly: read status, change ID, verify 1 Mbps, centre, jog and recheck after a power cycle. Tested on unmounted servos with one firmware version, and says so. MIT, in English and Chinese.
 
 ## Articles and Coverage
 
