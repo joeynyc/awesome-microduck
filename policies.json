@@ -406,6 +406,24 @@
       "source": "https://huggingface.co/duckyduck369/microduck-hd1910-velstand-djbob",
       "description": "Walk, walk-and-get-up, flamingo and roulade policies trained for individual HD-1910 replicas, each card giving the robot's tuned HOME pose, gains, supply voltage, a hashed simulation model of that build and a 256-robot evaluation table. Apache-2.0. Sim-only.",
       "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:HannesVonEssen/microduck-backwards-scoot",
+      "name": "microduck-backwards-scoot",
+      "provider": "huggingface",
+      "repo_id": "HannesVonEssen/microduck-backwards-scoot",
+      "source": "https://huggingface.co/HannesVonEssen/microduck-backwards-scoot",
+      "description": "A seated duck scoots backward on its seat to dock into the MicroDock charging dock. Trained in MuJoCo; its preview video shows it on a real duck, tested by Antoine Pirrone of Pollen. Apache-2.0.",
+      "artifact_mode": "probe-provider"
+    },
+    {
+      "id": "huggingface:GinDuck/microduck-trick-pack",
+      "name": "Microduck Trick Pack",
+      "provider": "huggingface",
+      "repo_id": "GinDuck/microduck-trick-pack",
+      "source": "https://huggingface.co/GinDuck/microduck-trick-pack",
+      "description": "Five tricks in one policy, each started by a short command pulse, with the duck standing up again after every one: plumps with legs up, a forward roll, left and right kicks and a deep bow. Apache-2.0. Sim-only.",
+      "artifact_mode": "probe-provider"
     }
   ]
 }
