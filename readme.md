@@ -204,6 +204,8 @@ All from the `pollen-robotics/microduck` repository.
 - [mujoco-puzzle-gym](https://github.com/Song-Seng-Hun/mujoco-puzzle-gym) - A coding agent builds stateful puzzle rooms with switches, doors and goals as YAML programs in MuJoCo, and the duck, its first robot, learns to solve them with RL on top of the official `velstand` walk. Apache-2.0, in Korean. *Sim-only.*
 - [MicroDuck_1910_RL](https://github.com/howe12/MicroDuck_1910_RL) - Simulation training for the duck on Feetech HD-1910 actuators with mjlab and rsl_rl, keeping the upstream 61-in, 14-out contract and exporting ONNX with the normaliser baked in. Apache-2.0, in Chinese. *Sim-only.*
 - [Microduck Ball Balance](https://github.com/divyamjainx/microduck-ball) - Two-stage Isaac Lab training to stand on a fixed ball, then balance on a freely rolling one, with checkpoints, numerical evaluations and a streamed Isaac Sim viewer on NVIDIA Brev. Isaac Lab BSD-3-Clause headers. *Sim-only.*
+- [Microduck Football](https://github.com/BrouthenKamel/lerobot_microduck) - Football in simulation, first with RL, then from the duck's own head camera with a LeRobot ACT student refined by DAgger, then two against two, with the [camera datasets](https://huggingface.co/datasets/brouthen/microduck-football-rl-camera) and [ACT player](https://huggingface.co/brouthen/microduck-football-act) on the Hub. Apache-2.0. *Sim-only.*
+- [microduck-walk](https://github.com/dvat-oss-source/microduck-walk) - Walking policies trained from scratch with PPO in a Mac-native C++ MuJoCo and BAM environment, randomised over servo and supply-voltage behaviour, that climb a 5° ramp and take an 8 N shove before Pollen's get-up policy stands the duck back up. Apache-2.0. *Sim-only.*
 
 ## Policies and Skills
 
@@ -325,6 +327,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [ANKA](https://github.com/crimzzon92/ANKA-Microduck-AI-Brain) - Experimental LLM-driven mind where the language model decides what the duck thinks, feels, says and does, keeping autobiographical memories and reflecting on them at night, in the MuJoCo simulator for now. Apache-2.0. *Sim-only.*
 - [microduck-mijia-control](https://github.com/GVNman/microduck-mijia-control) - Chinese voice control of Mi Home devices from the duck's Radxa board, so it can turn on lights and close curtains, plus a proxy setup to keep it online. MIT, in Chinese and English.
 - [MicroDuck Dialogue](https://github.com/Ngalalalekhaaa/microduck-dialogue) - Chinese dialogue and task planning with a fine-tuned Qwen3.5-2B planner driving the existing walking, posture and kicking controllers in MuJoCo, with a chat window. Plans were fully correct in 268 of 310 development cases, not a blind test, and 11 of 11 finite goals passed in simulation. Apache-2.0. *Sim-only.*
+- [Stage Companion Robot](https://github.com/charles-cs-yan/microduck) - Voice-driven routine for a live show: the duck hears a few English phrases, follows the host by an ArUco marker, dances and walks home, with recognition and control running on the duck itself, built for an HD-1910 build. Its author says several parts have only run in simulation so far. Apache-2.0.
 
 ## Community Hubs and Registries
 
@@ -348,6 +351,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [MicroDuck for Garry's Mod](https://github.com/DJ210517/microduck-gmod) - Experimental Windows port that brings the walking and roller ducks, their original public ONNX policies and the tricks into Garry's Mod, with a remote and chase camera. The Workshop item is private while testing, so it ships as a release download. Apache-2.0.
 - [omo-microduck](https://github.com/omoresearch/omo-microduck) - Minecraft mod where the duck, with its real CAD, servo model and walking policy simulated live in MuJoCo, walks on your blocks as a companion, with reels cut from live play. MIT.
 - [DuckFightClub Sumo](https://github.com/picsoung/duckfight-sumo) - Participant kit for [DuckFightClub](https://duckfight.club/participate), simulator sumo between two policies in a shared MuJoCo arena, run live at the PAIR(ED) Summit in Paris on 1 December 2026, with the match UI, official walkers, a CPU referee and an example autonomous fighter. Apache-2.0. *Sim-only.*
+- [Microduck Lab (comic-book house)](https://r1chi33333.github.io/microduck-lab-preview/) - Browser game with a flock of ducks loose in a comic-book house: pick colours, grab toys with the beak, skate, play football, race and chase a laser, with speech bubbles showing each duck's thoughts. Rapier physics, not the policies. [Source](https://github.com/R1chi33333/Microduck-lab), MIT.
 
 ### Browser and Desktop Simulators
 
@@ -419,6 +423,7 @@ Ways for LLM agents and scripts to drive a duck.
 - [Microduck beak lab](https://github.com/qilinxiaoxiang/microduck-beak-lab) - Picks up, holds and drops an object with the beak, comparing a trained jaw policy with its untrained start and a scripted controller in the same scene; broader head and jaw learning is proposed, not done. *Sim-only.*
 - [Duckophila](https://github.com/first-it-consulting/duckophila) - The whole FlyWire fruit-fly connectome, 138,639 neurons, run in closed loop with the duck in MuJoCo, its depth sensing feeding the brain and the brain steering the walk, with a viewer lighting each neuron as it spikes and a [video](https://huggingface.co/spaces/HW01/duckophila). Apache-2.0. *Sim-only.*
 - [Micro Garden](https://github.com/ChristianNHill/micro-garden) - Five ducks, each on its own copy of the FlyWire fruit-fly connectome, smell, see and hear in a persistent garden, get hungry and thirsty, and show what emerges; the brain talks to the body through the robot's command protocol. [Browser version](https://chrisnhill.com/garden/). MIT. *Sim-only.*
+- [Microduck × jepad](https://huggingface.co/spaces/rafaelcaricio/microduck-jepad-simulator) - Browser showcase of a proprioceptive JEPA world model riding alongside the walk, switching live between Pollen's `velstand` walker and the adaptive version on flat ground, ice, gravel and a skate park. Apache-2.0. *Sim-only.*
 
 ## Hardware and Fabrication
 
@@ -441,6 +446,7 @@ The hardware is not open source (no BOM, CAD or PCB files), but the MJCF and STL
 - [RDK X5 Duck](https://github.com/CanNyCat17/rdk-x5-microduck) - Full build on an RDK X5 covering parts, printing and assembly, onboard control, IMU setup and MuJoCo simulation, with a video of a short onboard walk and a validated single-battery power setup. Its author says walking stability is still being tuned. Apache-2.0, in Chinese.
 - [kryakva](https://github.com/AleksWolf/kryakva) - Custom duck on fifteen HD-1910 servos with parts drawn from scratch, its own PCB, a Radxa Zero 3W, camera, rangefinder, microphone and speaker, and policies trained for these servos; it stands up, walks and turns from a DualSense pad. Code Apache-2.0, 3D models CC BY-NC-SA 4.0, in English and Russian.
 - [microduck-software (HD-1910)](https://github.com/harrysungit/microduck-software) - The software side of the fanhao375 HD-1910 replica: [extra training tasks](https://github.com/harrysungit/microduck-rl) for those servos and ROCm GPUs, a runtime fork with fixes, IMU compatibility and the Studio web console. Apache-2.0, in English and Chinese.
+- [microduck-sim2real (chaowang111)](https://github.com/chaowang111/microduck-sim2real) - The software side of an HD-1910 replica: walking, get-up and a new single-leg balance skill trained in mjlab and run on the Radxa board, the sim-to-real debugging written up, and an LLM voice agent driving it through tool calls, with phone videos of the real duck. MIT, in Chinese with an English summary.
 
 ### Reconstructions, CAD and Printable Parts
 
