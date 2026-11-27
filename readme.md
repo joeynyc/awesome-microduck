@@ -206,6 +206,7 @@ All from the `pollen-robotics/microduck` repository.
 - [Microduck Ball Balance](https://github.com/divyamjainx/microduck-ball) - Two-stage Isaac Lab training to stand on a fixed ball, then balance on a freely rolling one, with checkpoints, numerical evaluations and a streamed Isaac Sim viewer on NVIDIA Brev. Isaac Lab BSD-3-Clause headers. *Sim-only.*
 - [Microduck Football](https://github.com/BrouthenKamel/lerobot_microduck) - Football in simulation, first with RL, then from the duck's own head camera with a LeRobot ACT student refined by DAgger, then two against two, with the [camera datasets](https://huggingface.co/datasets/brouthen/microduck-football-rl-camera) and [ACT player](https://huggingface.co/brouthen/microduck-football-act) on the Hub. Apache-2.0. *Sim-only.*
 - [microduck-walk](https://github.com/dvat-oss-source/microduck-walk) - Walking policies trained from scratch with PPO in a Mac-native C++ MuJoCo and BAM environment, randomised over servo and supply-voltage behaviour, that climb a 5° ramp and take an 8 N shove before Pollen's get-up policy stands the duck back up. Apache-2.0. *Sim-only.*
+- [Microduck reward sweep](https://github.com/meshive/youtube-tutorials/tree/main/microduck/ep01-reward-sweep) - Trains the 2 m sprint with the forward reward set to 1 through 5, with scripts, settings and a [video](https://www.youtube.com/watch?v=oJol6iyv7ws). Reward 5 was fastest at 2.446 s over 5 scorer seeds; each reward was trained once. Runs on Meshive, a paid GPU cloud. MIT scripts. *Sim-only.*
 
 ## Policies and Skills
 
