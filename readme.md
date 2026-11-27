@@ -172,6 +172,7 @@ All from the `pollen-robotics/microduck` repository.
 - [duckbatch](https://github.com/craigm26/duckbatch) - Batched, judged training on one 4 GB laptop GPU, with a pre-registered kill order pruning small attempts. Its first result is a [student 7.5 times smaller](https://huggingface.co/craigm26/microduck-duckbatch-b002-128x128) than the default walker that tracks velocity within 5 percent of it but falls about three times as often under pushes. Apache-2.0. *Sim-only.*
 - [Microduck School (Korean training app)](https://huggingface.co/spaces/marcusyun1664/microduck-school) - Gradio app that starts `microduck_rl` training in a few taps as Hugging Face Jobs on your own account (about 0.80 USD an hour on an L4), saving a private model. Built so a child can use it once an adult has deployed it, with a practice mode that fakes training when no token is set. Apache-2.0, in Korean. *Sim-only.*
 - [nebius-claw-microduck-isaaclab](https://github.com/kabilankb/nebius-claw-microduck-isaaclab) - Agents running Nemotron on Nebius Token Factory train the duck in Isaac Lab from one sentence, read the reward curves, tune, judge the gait from video, then export a policy and check it against the robot's interface. The bundle is staged for a real duck but has not run on one. [Project page](https://kabilankb.github.io/nebius-claw-microduck-isaaclab/). Apache-2.0. *Sim-only.*
+- [MicroDuck Agent RL Lab](https://github.com/jmtan25/microduck-agent-rl-lab) - Local agent workbench where a coach model proposes reward and hyperparameter plans, then runs PPO or FastSAC training and evaluation across eight tasks from basketball and stilts to ladder climbing and RDK deployment, with video demos. Apache-2.0, in Chinese. *Sim-only.*
 
 ### Courses and Workshops
 
@@ -207,6 +208,7 @@ All from the `pollen-robotics/microduck` repository.
 - [Microduck Football](https://github.com/BrouthenKamel/lerobot_microduck) - Football in simulation, first with RL, then from the duck's own head camera with a LeRobot ACT student refined by DAgger, then two against two, with the [camera datasets](https://huggingface.co/datasets/brouthen/microduck-football-rl-camera) and [ACT player](https://huggingface.co/brouthen/microduck-football-act) on the Hub. Apache-2.0. *Sim-only.*
 - [microduck-walk](https://github.com/dvat-oss-source/microduck-walk) - Walking policies trained from scratch with PPO in a Mac-native C++ MuJoCo and BAM environment, randomised over servo and supply-voltage behaviour, that climb a 5° ramp and take an 8 N shove before Pollen's get-up policy stands the duck back up. Apache-2.0. *Sim-only.*
 - [Microduck reward sweep](https://github.com/meshive/youtube-tutorials/tree/main/microduck/ep01-reward-sweep) - Trains the 2 m sprint with the forward reward set to 1 through 5, with scripts, settings and a [video](https://www.youtube.com/watch?v=oJol6iyv7ws). Reward 5 was fastest at 2.446 s over 5 scorer seeds; each reward was trained once. Runs on Meshive, a paid GPU cloud. MIT scripts. *Sim-only.*
+- [Microduck Happy Dance](https://github.com/skyrylova/microduck-happy-dance) - Small standalone script that sways a standing duck's body left and right three times with the feet planted, then returns to neutral. Tested in simulation, not on hardware, and says so. MIT. *Sim-only.*
 
 ## Policies and Skills
 
@@ -379,6 +381,9 @@ Ways for LLM agents and scripts to drive a duck.
 - [specs-microduck](https://github.com/kgediya/specs-microduck) - Hand-gesture teleoperation of the simulated duck from Snap Spectacles, with in-lens telemetry.
 - [Microduck Studio iOS shell](https://github.com/viniedodo/microduck-replica-ios) - Unofficial, unsigned WKWebView app that opens the Microduck Studio console running on a replica duck from an iPhone or iPad; all control stays in the duck's Studio service. MIT, in Chinese.
 - [DuckBuddy App](https://github.com/jackwuwei/DuckBuddy) - Unofficial native phone app, SwiftUI on iOS and Compose on Android over a shared Rust core, to add a duck, drive it, run moves, switch policies, check status and change networks, on phones, tablets and foldables. Apache-2.0, in Chinese and English.
+- [MicroduckRemote](https://github.com/ajevans99/MicroduckRemote) - Native SwiftUI and Metal remote for iOS and macOS with live WebRTC video, gamepad driving, trick installs from the Hub, Siri App Intents, a LiDAR RoomPlan export to a MuJoCo scene, and a macOS launcher for the official simulator. MIT.
+- [QuackDeck](https://github.com/rafaelcaricio/quackdeck) - Native iPhone cockpit with hardware WebRTC video, Bluetooth onboarding and a Rust core compiled from the upstream protocol crates, plus an offline demo mode that simulates video, sensors and joints without a robot. Apache-2.0.
+- [Microduck Lab VR](https://github.com/R1chi33333/microduck-lab-vr) - First-person VR version of the comic-book-house game for Quest Pro over Link in Unity: you are the duck, among a flock with their own plans, with toys, skates, football and a house race. Game physics, not the policies. MIT.
 
 ### Desktop Pets and Companions
 
